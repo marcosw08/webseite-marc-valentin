@@ -5,13 +5,36 @@
     <meta charset="utf-8">
     <title>Marc & Valentin's Web</title>
     <link rel="stylesheet" type="text/css" href="valentin.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
+<header class="zoom">
+    <img src="Thymio.jpg">
+</header>
+<script>
+    $(window).scroll(function () {
+        var scroll = $(window).scrollTop();
+        $(".zoom img").css({
+            transform: 'translate3d(-50%, -' + (scroll / 100) + '%, 0) scale(' + (100 + scroll / 5) / 100 + ')',
+            //Blur suggestion from @janwagner: https://codepen.io/janwagner/ in comments
+            //"-webkit-filter": "blur(" + (scroll/200) + "px)",
+            //filter: "blur(" + (scroll/200) + "px)"
+        });
+    });
+</script>
 
-<body class="catalina">
-    <div>
-        <h1>HTML</h1>
+<body>
+    <main role="main">
+        <div class="content">
+            <div>
+                <h1>Im Bau</h1>
+                <h2> Marc & Valentin!</h2>
+                
+            </div>
 
-    </div>
+        </div>
+    </main>
+
+
 </body>
 
 </html>

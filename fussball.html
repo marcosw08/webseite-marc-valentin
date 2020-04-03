@@ -5,13 +5,42 @@
     <meta charset="utf-8">
     <title>Marc & Valentin's Web</title>
     <link rel="stylesheet" type="text/css" href="valentin.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
+<header class="zoom">
+    <img src="kl3.jpeg">
+</header>
+<script>
+    $(window).scroll(function () {
+        var scroll = $(window).scrollTop();
+        $(".zoom img").css({
+            transform: 'translate3d(-50%, -' + (scroll / 100) + '%, 0) scale(' + (100 + scroll / 5) / 100 + ')',
+            //Blur suggestion from @janwagner: https://codepen.io/janwagner/ in comments
+            //"-webkit-filter": "blur(" + (scroll/200) + "px)",
+            //filter: "blur(" + (scroll/200) + "px)"
+        });
+    });
+</script>
 
-<body class="catalina">
-    <div>
-        <h1>SC Kriens</h1>
+<body>
+    <main role="main">
+        <div class="content">
+            <div>
+                <h1>SC Kriens </h1>
+                <p> <img src="SC_Kriens_Logo.png"></p>
+                <h2><br><br><br<<br>Marc:</h2>
+                <p><br<br>Wie ihr mitbekommen habt, spiele ich sehr gerne Fussball. Ich habe mit meiner Mannschaft auch schon Turniere gewonnen.</p>
+                <p><img src="sieg utenberg.jpg"></p>
+                <p>Ich spiele schon seit 3 Jahren Fussball im Verein und habe die Stufen:<br><br>F-Pool<br><br>Ed<br><br>Eb<br>
+                    <br>Dd<br><br>besucht.</p>
+                    <p>Ich werdde wahrscheindlich noch ein Jahr Fussball machen, bis ich austrete.<br><br><br><br></p>
 
-    </div>
+            </div>
+
+        </div>
+    </main>
+
+
 </body>
 
 </html>
