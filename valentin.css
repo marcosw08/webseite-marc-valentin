@@ -23,6 +23,17 @@ body {
   padding-bottom: 100px;
   padding-top: 10px;
 }
+.hinterblock {
+  display: block;
+  width: 100%;
+  margin: auto;
+  background-image: url(Hinterblock.jpg);
+  background-repeat: repeat-y; 
+  background-attachment: fixed;
+  background-size: 100%;
+  padding-bottom: 100px;
+  padding-top: 10px;
+}
 .catalina {
   display: block;
   width: 100%;
@@ -117,7 +128,7 @@ a {
 .content{
 	margin: 0 auto;
 	max-width: 90%;
-  width: 720px;
+  width: 2900px;
 }
 main{
 	padding: 1% 0;
