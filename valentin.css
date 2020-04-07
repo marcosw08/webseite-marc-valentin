@@ -76,6 +76,11 @@ p {
   text-align: center;
   color: black;
 }
+h4 {
+  font-size: 20px;
+  text-align: center;
+  color: black;
+}
 button.gross {
   background-color: green;
   color:white;
@@ -100,6 +105,11 @@ button.gross:hover {
   border-radius: 4px;
   border:2px solid Green;
 }
+.html{
+  color:black;
+  font-size: 40px;
+  text-align: center;
+}
 button.kleinfloat2 {
   width: 350px;
   background-color: green;
@@ -122,9 +132,7 @@ button.kleinfloat2:hover {
   font-size: 30px;
   border:2px solid Green;
 }
-a {
-  color: #000;
-}
+
 .content{
 	margin: 0 auto;
 	max-width: 90%;
