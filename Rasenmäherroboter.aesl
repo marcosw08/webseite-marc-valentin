@@ -1,0 +1,51 @@
+<!DOCTYPE aesl-source>
+<network>
+
+
+<!--list of global events-->
+
+
+<!--list of constants-->
+
+
+<!--show keywords state-->
+<keywords flag="true"/>
+
+
+<!--node thymio-II-->
+<node nodeId="19335" name="thymio-II">var Switch =1									#Erstellt eine Variable "Switch", um den Roboter mit einem Knopf zu steuern
+
+onevent buttons												
+if button.center ==1 and Switch ==1 then
+	while button.center ==1 do
+		Switch =0
+	end
+	while button.center ==0 do							#Schaut, wann der Roboter auf ein Hindernis trifft, und kehrt um
+		motor.left.target =1000
+		motor.right.target =1000
+		if prox.horizontal [1] >3000 then
+			while prox.horizontal [6] &lt;1000 do
+				motor.left.target =0
+				motor.right.target =-500
+			end
+		end	
+		if prox.horizontal [3] >3000 then
+			while prox.horizontal [5] &lt;1000 do
+				motor.left.target =-500
+				motor.right.target =0
+			end
+		end	
+	end
+	while button.center ==1 do
+		Switch =0
+	end
+elseif button.center ==1 and Switch ==0 then		#Schaltet den Roboter wieder aus
+	motor.left.target =0
+	motor.right.target =0
+	while button.center ==1 do
+		Switch =1
+	end
+end</node>
+
+
+</network>

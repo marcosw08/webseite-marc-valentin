@@ -134,9 +134,9 @@ button.kleinfloat2:hover {
 }
 
 .content{
-	margin: 0 auto;
+	margin: auto;
 	max-width: 90%;
-  width: 2900px;
+  width: 1300px;
 }
 main{
 	padding: 1% 0;
@@ -165,6 +165,27 @@ footer a{color: #ccc;}
 	transform: translateX(-50%);
 	/* Thanks  @bastian_fiessinger. Use when activating blur effect:
 	will-change: -webkit-filter, filter, transform; */
+}
+.sourcecode {
+  margin: auto;
+  width: 1100px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: black;
+  padding: 10px;
+  overflow: auto;
+  background: white;
+  font-size: 14px;
+  height: 400px;
+}
+.keyword {
+  color: brown;
+}
+.befehl {
+  color: blue;
+}
+.erklärung {
+  color: green;
 }
 @media (max-width: 667px) {
 	h1{

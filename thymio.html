@@ -23,62 +23,140 @@
                         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                         allowfullscreen></iframe>
         </p>
-        <h2><br>Die Notbremse</h2>
+        <p><br><br>Und so sieht der Programmcode aus. Du kannst ihn kopieren.</p>
+        <div class="sourcecode">
+                <pre>
+<span class="keyword">onevent</span> button.forward     <span class="erklärung"># Befehlt wenn der vordere Knopf gedrückt wird, Beide Motoren geradeaus Gas geben.</span>
+motor.left.target =<span class="befehl">500</span>
+motor.right.target =<span class="befehl">500</span>
+<span class="keyword">onevent</span> button.backward 	<span class="erklärung"># Befehlt wenn der hintere Knopf gedrückt wird, Beide Motoren Rückwärts Gas geben.</span>
+motor.left.target =<span class="befehl">-500</span>
+motor.right.target =-<span class="befehl">-500</span>
+<span class="keyword">onevent</span> button.center      <span class="erklärung"># Befehlt wenn der mittlere Knopf gedrückt wird, Beide Motoren still stehen.</span>
+motor.left.target =<span class="befehl">0</span>
+motor.right.target =<span class="befehl">0</span>
+<span class="keyword">onevent</span> button.left        <span class="erklärung"># Befehlt wenn der linke Knopf gedrückt wird, Beide Motoren unterschiedlich Gas geben, und schräg fahren.</span>
+motor.left.target =<span class="befehl">350</span>
+motor.right.target =<span class="befehl">500</span>
+<span class="keyword">onevent</span> button.right   <span class="erklärung"># Befehlt wenn der rechte Knopf gedrückt wird, Beide Motoren unterschiedlich Gas geben, und schräg fahren.</span>
+motor.left.target =<span class="befehl">500</span>
+motor.right.target =<span class="befehl">350</span>
+           </pre>
+        </div>
+        <h2><br><br><br>Die Notbremse</h2>
         <p>Der Thymio fährt auf eine Klippe zu..... Und stürzt nicht ab! Dank einer Notbremse!</p>
         <p><iframe width="560" height="315" src="https://www.youtube.com/embed/BXUQURHqnkA" frameborder="0"
                         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                         allowfullscreen></iframe>
         </p>
+        <p><br><br>Und so sieht der Programmcode aus. Du kannst ihn kopieren.</p>
+        <div class="sourcecode">
+                <pre>
+<span class="keyword">onevent</span> button.forward               <span class="erklärung"># Wenn der vordere Knopf gedrückt wird, dann schalte die Motoren auf 300.</span>
+motor.left.target =<span class="befehl">300</span>
+motor.right.target =<span class="befehl">300</span>
+ 
+<span class="keyword">onevent</span> prox
+ 
+<span class="keyword">if</span> prox.ground.delta[0] &lt;100 or prox.ground.delta[1] &lt;100 <span class="keyword">then</span>  <span class="erklärung"># Wenn die unteren Sensoren mehr als 100 wahrnehmen, dann schalte die Motoren auf 0.</span>
+motor.left.target =<span class="befehl">0</span>                                                 
+motor.right.target =<span class="befehl">0</span>
+end
+                </pre>
+
+        </div>
         <h2><br>Der Rasenmäherroboter</h2>
         <p>Er fährt langsam umher, er weicht einem Hindernis aus.</p>
         <p><iframe width="560" height="315" src="https://www.youtube.com/embed/KzBTpSwWyAM" frameborder="0"
                         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                         allowfullscreen></iframe>
         </p>
-        <h1><br><br>Level 2<br><br></h1>
+        <p><br><br>Und so sieht der Programmcode aus. Du kannst ihn kopieren.</p>
+        <div class="sourcecode">
+                <pre>
+        axxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxenoaxlsa87dae8t
+                </pre>
+        </div>
+        <h1><br><br><br>Level 2<br><br></h1>
         <h2>Das autonome Fahrzeug</h2>
         <p>Der Thymio/Das autonome Fahrzeug folgt der Linie bis zum Ziel.</p>
         <p><iframe width="560" height="315" src="https://www.youtube.com/embed/tCnZkBQ87zk" frameborder="0"
                         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                         allowfullscreen></iframe>
         </p>
-        <h2><br><br>Die Ampel</h2>
+        <h2><br><br><br><br>Die Ampel</h2>
         <p>Der Thymio kann mit einem Knopfdruck als Ampel steuern.</p>
         <p><iframe width="560" height="315" src="https://www.youtube.com/embed/_LmhfqlJiLg" frameborder="0"
                         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                         allowfullscreen></iframe>
         </p>
-        <h2><br><br>Roboterkunst</h2>
+        <p><br><br>Und so sieht der Programmcode aus. Du kannst ihn kopieren.</p>
+        <div class="sourcecode">
+                <pre>
+<span class="keyword">var</span> a =<span class="befehl">0</span>								<span class="erklärung">#Erstellt eine Variable "a"</span>
+<span class="keyword">var</span> Colour =<span class="befehl">0</span>								<span class="erklärung">#Erstellt eine Variable "Colour"</span>
+<span class="keyword">onevent</span> buttons
+<span class="keyword">if</span> button.center ==<span class="befehl">1</span> <span class="keyword">and</span> Colour ==0 <span class="keyword">then</span>				<span class="erklärung">#Setzt jedes zweite Mal die LED-Farbe auf rot</span>
+        <span class="keyword">call</span> leds.top (<span class="befehl">32</span>, <span class="befehl">0</span>, <span class="befehl">0</span>)
+	Colour =<span class="befehl">1</span>
+	<span class="keyword">if</span> button.center ==<span class="befehl">1</span> <span class="keyword">then</span>
+        <span class="keyword">while</span> button.center ==<span class="befehl">1</span> <span class="keyword">do</span>
+			a=a+<span class="befehl">1</span>
+                <span class="keyword">end</span>
+        <span class="keyword">end</span>
+<span class="keyword">elseif</span> button.center ==<span class="befehl">1</span> and Colour ==<span class="befehl">1</span> then		        	<span class="erklärung">#Setzt jedes zweite Mal die LED-Farbe auf grün</span>
+        <span class="keyword">call</span> leds.top (<span class="befehl">0</span>, <span class="befehl">32</span>, <span class="befehl">0</span>)
+	Colour =<span class="befehl">0</span>
+	<span class="keyword">if</span> button.center ==<span class="befehl">1</span> <span class="keyword">then</span>
+                <span class="keyword">while</span> button.center ==<span class="befehl">1</span> <span class="keyword">do</span>
+			a=a+<span class="befehl">1</span>
+                <span class="keyword">end</span>
+        <span class="keyword">end</span>
+<span class="keyword">end</span>
+                </pre>
+        </div>
+        <h2><br><br><br><br>Roboterkunst</h2>
         <p>Der Thymio kann man so einstellen, dass er verschiedene Grössen und Geschwindigkeit von Kreisen zeichnet.</p>
         <p><iframe width="560" height="315" src="https://www.youtube.com/embed/1W3u9NBIEig" frameborder="0"
                         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                         allowfullscreen></iframe>
         </p>
-        <h2>Die Verfolgungsjagd</h2>
-        <p>Der Thymio fährt umher, bis er ein Ziel erkannt hat. Dann verfolgt er das Ziel.</p>
-        <p><iframe width="560" height="315" src="https://www.youtube.com/embed/eRQSUPqgouA" frameborder="0" allow="accelerometer;
+        <p><br><br>Und so sieht der Programmcode aus. Du kannst ihn kopieren.</p>
+        <h2<br><br><br><br>
+                <h2>Die Verfolgungsjagd</h2>
+                <p>Der Thymio fährt umher, bis er ein Ziel erkannt hat. Dann verfolgt er das Ziel.</p>
+                <p><iframe width="560" height="315" src="https://www.youtube.com/embed/eRQSUPqgouA" frameborder="0"
+                                allow="accelerometer;
          autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                <h1><br><br><br>Abschnitt 2</h1>
-                <h2>So programmiert man Aseba:<br><br></h2>
-                <h4><img src="Aseba.png"><br>Abschnitt aus Aseba Studio</h4>
+                        <h1><br><br><br>Abschnitt 2</h1>
+                        <h2>So programmiert man Aseba:<br><br></h2>
+                        <h4><img src="ASEBA BUUUUUUUUUUUUUUUUUUUUUUH GEISTER.png"><br>Abschnitt aus Aseba Studio</h4>
 
-                <p class="html">Hier zeigen wir euch die Programmierung. Den Thymio kann man mit 3 verschiedenen<br>
-                        Programmiersprachen programmieren: Thymio VPL, Blockly und Aseba Studio. Da man bei Thymio VPL<br>
-                        und Blockly mit Blöcken programmiert, gehen wir eher weniger darauf ein.<br>
-                        In Aseba Studio kann man den Thymio mit der Programmiersprache Aseba programmieren. Das ist<br>
-                        ähnlich wie Java, allerdings ist sie nicht objektbasiert und enthält nicht so viele Klammern.<br>
-                        Mit dem Thymio kann man die komischsten Sachen machen. Man kann ihm befehlen, dass er wie ein<br>
-                        Staubsauger herumfährt, er kann Musik machen. Man kann ihn sogar zeichnen lassen.<br>
-                        Der Thymio besitzt 9 Näherungssensoren, einen Temperatursensoren, ein Gyrosensor, ein Mikrophon,<br>
-                        zwei Drehsensoren und 5 Drucksensoren. Alle kann man programmieren.<br>
-                        Mit dem Thymio kann man wirklich sehr tolle Sachen machen.</p>
 
-                <h1><br><br><br>Quelle</h1>
-                <p>Nachschlagen:<a href="https://thymio.org" target="_blank">https://www.thymio.org</a><br><br><br></p>
 
-                <p><a href="index.html"><button class="gross">Zur Startseite</button></a></p>
-                <p>Bis bald! Valentin & Marc</p>
-        </p>
+                        <p class="html">Hier zeigen wir euch die Programmierung. Den Thymio kann man mit 3 verschiedenen
+                                Programmiersprachen programmieren: Thymio VPL, Blockly und Aseba Studio. Da man bei
+                                Thymio VPL
+                                und Blockly mit Blöcken programmiert, gehen wir eher weniger darauf ein.
+                                In Aseba Studio kann man den Thymio mit der Programmiersprache Aseba programmieren. Das
+                                ist
+                                ähnlich wie Java, allerdings ist sie nicht objektbasiert und enthält nicht so viele
+                                Klammern.
+                                Mit dem Thymio kann man die komischsten Sachen machen. Man kann ihm befehlen, dass er
+                                wie ein
+                                Staubsauger herumfährt, er kann Musik machen. Man kann ihn sogar zeichnen lassen.
+                                Der Thymio besitzt 9 Näherungssensoren, einen Temperatursensoren, ein Gyrosensor, ein
+                                Mikrophon,
+                                zwei Drehsensoren und 5 Drucksensoren. Alle kann man programmieren.
+                                Mit dem Thymio kann man wirklich sehr tolle Sachen machen.</p>
+
+                        <h1><br><br><br>Quelle</h1>
+                        <p>Nachschlagen:<a href="https://thymio.org"
+                                        target="_blank">https://www.thymio.org</a><br><br><br></p>
+
+                        <p><a href="index.html"><button class="gross">Zur Startseite</button></a></p>
+                        <p>Bis bald! Valentin & Marc</p>
+                </p>
 </body>
 
 </html>
