@@ -187,20 +187,30 @@ footer a{color: #ccc;}
 .erklärung {
   color: green;
 }
-@media (max-width: 667px) {
-	h1{
-		font-size: 1.8rem;
-		line-height: 2.6rem;
-		text-align: left;
-	}
-	.content{
-		margin: 0 auto;
-		max-width: 90%;
-		width: 100%;
-		height: 100%;
-		text-align: justify;
-	}
-	.zoom{
-		overflow: hidden;
-		padding-bottom: 75%;
-	}
+@media (max-width: 700px){
+     h1{
+      font-size: 40px;
+      text-align: center;
+      color: black;
+     }
+     h2 {
+      font-size: 20px;
+      text-align: center;
+      color: black;
+    }
+    h3 {
+      font-size: 50px;
+      text-align: center;
+      color: black;
+    }
+    p {
+      font-size: 12px;
+      text-align: center;
+      color: black;
+    }
+    h4 {
+      font-size: 8px;
+      text-align: center;
+      color: black;
+    }
+  }
