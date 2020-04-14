@@ -105,6 +105,10 @@ button.gross:hover {
   border-radius: 4px;
   border:2px solid Green;
 }
+.youtube {
+  width: 80%;
+  height: 300px;
+}
 .html{
   color:black;
   font-size: 40px;
@@ -187,30 +191,134 @@ footer a{color: #ccc;}
 .erklärung {
   color: green;
 }
-@media (max-width: 700px){
-     h1{
-      font-size: 40px;
+iframe {
+  width: 960px;
+  height: 550px;
+}
+.fotoklein {
+  zoom: 100%;
+}
+.fotoultraklein {
+  zoom: 100%;
+}
+@media (max-width: 700px) {
+      h1{
+      font-size: 30px;
       text-align: center;
       color: black;
-     }
-     h2 {
-      font-size: 20px;
+      }
+      h2 {
+      font-size: 16px;
       text-align: center;
       color: black;
-    }
-    h3 {
-      font-size: 50px;
-      text-align: center;
-      color: black;
-    }
-    p {
-      font-size: 12px;
-      text-align: center;
-      color: black;
-    }
-    h4 {
-      font-size: 8px;
-      text-align: center;
-      color: black;
-    }
-  }
+      }
+      h3 {
+        font-size: 50px;
+        text-align: center;
+        color: black;
+      }
+      p {
+        font-size: 12px;
+        text-align: center;
+        color: black;
+      }
+      h4 {
+        font-size: 8px;
+        text-align: center;
+        color: black;
+      }
+      .ersthinter {
+        display: block;
+        width: 100%;
+        margin: auto;
+        background-image: url(einfachkleinhintergrund.jpg);
+        background-repeat: repeat-y; 
+        background-attachment: fixed;
+        background-size: 100%;
+        padding-bottom: 100px;
+        padding-top: 10px;
+      }
+      .hinterblock {
+        display: block;
+        width: 100%;
+        margin: auto;
+        background-image: url(Hinterblock.jpg);
+        background-repeat: repeat-y; 
+        background-attachment: fixed;
+        background-size: 100%;
+        padding-bottom: 100px;
+        padding-top: 10px;
+      }
+      .catalina {
+        display: block;
+        width: 100%;
+        margin: auto;
+        background-image: url(einfachhintergrundklein.png);
+        background-repeat: repeat-y; 
+        background-attachment: fixed;
+        background-size: 100%;
+        padding-bottom: 100px;
+        padding-top: 10px;
+      }
+      iframe {
+        width: 340px;
+        height: 180px;
+      }
+      .sourcecode {
+        margin: auto;
+        width: 300px;
+        border-width: 1px;
+        border-style: solid;
+        border-color: black;
+        padding: 10px;
+        overflow: auto;
+        background: white;
+        font-size: 12px;
+        height: 400px;
+      }
+      .prozessor {
+        display: block;
+        width: 100%;
+        margin: auto;
+        background-image: url(Hinterthymio_Portrait.jpg);
+        background-repeat: repeat-y; 
+        background-attachment: fixed;
+        background-size: 100%;
+        padding-bottom: 100px;
+        padding-top: 10px;
+      }
+      .html{
+        color:black;
+        font-size: 18px;
+        text-align: center;
+      }
+      button.kleinfloat2 {
+        width: 280px;
+        background-color: green;
+        color:white;
+        padding: 15px 32px;
+        text-align: center;
+        display: inline-block;
+        font-size: 30px;
+        -webkit-transition-duration: 1s.3s; /* Safari */
+        transition-duration: 1.3s;
+        border:2px solid Green;
+      }
+      button.kleinfloat2:hover {
+        width: 280px;
+        background-color: white;
+        color:black;
+        padding: 15px 32px;
+        text-align: center;
+        display: inline-block;
+        font-size: 30px;
+        border:2px solid Green;
+      }
+      .fotoklein {
+        zoom:33%;
+      }
+      .fotoultraklein {
+        zoom: 24%;
+      }
+      
+}

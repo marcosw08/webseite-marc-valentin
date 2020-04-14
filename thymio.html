@@ -3,8 +3,11 @@
 
 <head>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Thymio im Fokus</title>
         <link rel="stylesheet" type="text/css" href="valentin.css">
+        <link rel="stylesheet" type="text/css" href="css/site.css" />
+        <script type="text/javascript" src="js/cssrefresh.js"></script>
 </head>
 
 <body class="prozessor">
@@ -19,7 +22,7 @@
 
         <h2>Need for Speed</h2>
         <p>Der Thymio fährt ein Rennen, man kann ihn steuern auf der Strecke</p>
-        <p><iframe width="560" height="315" src="https://www.youtube.com/embed/fG_3NYsDiU8" frameborder="0"
+        <p><iframe src="https://www.youtube.com/embed/fG_3NYsDiU8" frameborder="0"
                         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                         allowfullscreen></iframe>
         </p>
@@ -45,7 +48,7 @@ motor.right.target =<span class="befehl">350</span>
         </div>
         <h2><br><br><br>Die Notbremse</h2>
         <p>Der Thymio fährt auf eine Klippe zu..... Und stürzt nicht ab! Dank einer Notbremse!</p>
-        <p><iframe width="560" height="315" src="https://www.youtube.com/embed/BXUQURHqnkA" frameborder="0"
+        <p><iframe src="https://www.youtube.com/embed/BXUQURHqnkA" frameborder="0"
                         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                         allowfullscreen></iframe>
         </p>
@@ -67,26 +70,61 @@ end
         </div>
         <h2><br>Der Rasenmäherroboter</h2>
         <p>Er fährt langsam umher, er weicht einem Hindernis aus.</p>
-        <p><iframe width="560" height="315" src="https://www.youtube.com/embed/KzBTpSwWyAM" frameborder="0"
+        <p><iframe src="https://www.youtube.com/embed/KzBTpSwWyAM" frameborder="0"
                         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                         allowfullscreen></iframe>
         </p>
         <p><br><br>Und so sieht der Programmcode aus. Du kannst ihn kopieren.</p>
         <div class="sourcecode">
                 <pre>
-        axxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxenoaxlsa87dae8t
+<span class="keyword">var</span> Switch =<span class="befehl">1</span>		<span class="erklärung">#Erstellt eine Variable "Switch", um den Roboter mit einem Knopf zu steuern.</span>
+
+<span class="keyword">onevent</span> buttons												
+<span class="keyword">if</span> button.center ==<span class="befehl">1</span> and Switch ==<span class="befehl">1</span> <span class="keyword">then</span>
+        <span class="keyword">while</span> button.center ==<span class="befehl">1</span> <span class="keyword">do</span>
+                Switch =<span class="befehl">0</span>
+        <span class="keyword">end</span>
+<span class="keyword">while</span> button.center ==<span class="befehl">0</span> <span class="keyword">do</span>        <span class="erklärung">#Schaut, wann der Roboter auf ein Hindernis trifft, und kehrt um.</span>
+                motor.left.target =<span class="befehl">1000</span>
+                motor.right.target =<span class="befehl">1000</span>
+                <span class="keyword">if</span> prox.horizontal [1] &gt;<span class="befehl">3000</span> <span class="keyword">then</span>
+                        <span class="keyword">while</span> prox.horizontal [<span class="befehl">6</span>] &lt;<span class="befehl">1000</span> <span class="keyword">do</span>
+                                motor.left.target =<span class="befehl">0</span>
+                                motor.right.target =<span class="befehl">-500</span>
+                         <span class="keyword">end</span>
+                <span class="keyword">end</span>	
+                        <span class="keyword">if</span> prox.horizontal [<span class="befehl">3</span>] ><span class="befehl">3000</span> <span class="keyword">then</span>
+                        <span class="keyword">while</span> prox.horizontal [<span class="befehl">5</span>] &lt;<span class="befehl">1000</span> <span class="keyword">do</span>
+                                motor.left.target =<span class="befehl">-500</span>
+                                motor.right.target =<span class="befehl">0</span>
+                        <span class="keyword">end</span>
+                <span class="keyword">end</span>
+
+           <span class="keyword">end</span>
+
+        
+        <span class="keyword">while</span>button.center ==<span class="befehl">1</span> <span class="keyword">do</span>
+                Switch =<span class="befehl">0</span>
+        <span class="keyword">end</span>
+        <span class="keyword">elseif</span> button.center ==1 and Switch ==0 <span class="keyword">then</span>		<span class="erklärung">#Schaltet den Roboter wieder aus.</span>
+        motor.left.target =<span class="befehl">0</span>
+        motor.right.target =<span class="befehl">0</span>
+        <span class="keyword">while</span> button.center ==<span class="befehl">1</span> <span class="keyword">do</span>
+                Switch =<span class="befehl">1</span>
+        <span class="keyword">end</span>
+<span class="keyword">do</span>
                 </pre>
         </div>
         <h1><br><br><br>Level 2<br><br></h1>
         <h2>Das autonome Fahrzeug</h2>
         <p>Der Thymio/Das autonome Fahrzeug folgt der Linie bis zum Ziel.</p>
-        <p><iframe width="560" height="315" src="https://www.youtube.com/embed/tCnZkBQ87zk" frameborder="0"
+        <p><iframe src="https://www.youtube.com/embed/tCnZkBQ87zk" frameborder="0"
                         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                         allowfullscreen></iframe>
         </p>
         <h2><br><br><br><br>Die Ampel</h2>
         <p>Der Thymio kann mit einem Knopfdruck als Ampel steuern.</p>
-        <p><iframe width="560" height="315" src="https://www.youtube.com/embed/_LmhfqlJiLg" frameborder="0"
+        <p><iframe src="https://www.youtube.com/embed/_LmhfqlJiLg" frameborder="0"
                         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                         allowfullscreen></iframe>
         </p>
@@ -117,20 +155,25 @@ end
         </div>
         <h2><br><br><br><br>Roboterkunst</h2>
         <p>Der Thymio kann man so einstellen, dass er verschiedene Grössen und Geschwindigkeit von Kreisen zeichnet.</p>
-        <p><iframe width="560" height="315" src="https://www.youtube.com/embed/1W3u9NBIEig" frameborder="0"
+        <p><iframe src="https://www.youtube.com/embed/1W3u9NBIEig" frameborder="0"
                         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                         allowfullscreen></iframe>
         </p>
         <p><br><br>Und so sieht der Programmcode aus. Du kannst ihn kopieren.</p>
+        <div class="sourcecode">
+                <pre>
+             Hier kommt Inhalt
+                </pre>
+        </div>
         <h2<br><br><br><br>
                 <h2>Die Verfolgungsjagd</h2>
                 <p>Der Thymio fährt umher, bis er ein Ziel erkannt hat. Dann verfolgt er das Ziel.</p>
-                <p><iframe width="560" height="315" src="https://www.youtube.com/embed/eRQSUPqgouA" frameborder="0"
-                                allow="accelerometer;
+                <p><iframe src="https://www.youtube.com/embed/eRQSUPqgouA" frameborder="0" allow="accelerometer;
          autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         <h1><br><br><br>Abschnitt 2</h1>
                         <h2>So programmiert man Aseba:<br><br></h2>
-                        <h4><img src="ASEBA BUUUUUUUUUUUUUUUUUUUUUUH GEISTER.png"><br>Abschnitt aus Aseba Studio</h4>
+                        <h4><img class="fotoklein" src="ASEBA BUUUUUUUUUUUUUUUUUUUUUUH GEISTER.png"><br>Abschnitt aus
+                                Aseba Studio</h4>
 
 
 
