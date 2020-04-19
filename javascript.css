@@ -1,0 +1,65 @@
+body {
+    font-family: Verdana,sans-serif;
+    text-align: center;
+    width: 1000px;
+    margin: auto;
+  }
+  input {
+    width: 35%;
+    font-size: 41px;
+  }
+  select {
+      width: 69px;
+      font-size: 41px;
+      height: 53px;
+      color: white;
+      background-color: green;
+  }
+  option {
+      color: white;
+  }
+  button.gross {
+      background-color: green;
+      color:white;
+      padding: 7px 16px;
+      text-align: center;
+      display: inline-block;
+      font-size: 40px;
+      border-radius: 4px;
+      -webkit-transition-duration: 0.7s; /* Safari */
+      transition-duration: 0.7s;
+      border:2px solid Green;
+  }
+  button.gross:hover {
+      background-color: white;
+      color:black;
+  }
+  .klein {
+    width: 60%;
+    font-size:38px;
+  }
+  .catalina {
+    display: block;
+    margin: auto;
+    background-image: url(Catalina.png);
+    background-repeat: repeat-y; 
+    background-attachment: fixed;
+    background-size: 100%;
+    padding-bottom: 100px;
+    padding-top: 10px;
+  }
+  @media (max-width: 700px) {
+    .catalina {
+        display: block;
+        width: 100%;
+        margin: auto;
+        background-image: url(einfachhintergrundklein.png);
+        background-repeat: repeat-y; 
+        background-attachment: fixed;
+        background-size: 100%;
+        padding-bottom: 100px;
+        padding-top: 10px;
+      }
+
+  }
+  
