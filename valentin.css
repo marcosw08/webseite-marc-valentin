@@ -206,27 +206,27 @@ iframe {
 }
 @media (max-width: 700px) {
       h1{
-      font-size: 30px;
+      font-size: 40px;
       text-align: center;
       color: black;
       }
       h2 {
-      font-size: 16px;
+      font-size: 22px;
       text-align: center;
       color: black;
       }
       h3 {
-        font-size: 50px;
+        font-size: 60px;
         text-align: center;
         color: black;
       }
       p {
-        font-size: 12px;
+        font-size: 17px;
         text-align: center;
         color: black;
       }
       h4 {
-        font-size: 8px;
+        font-size: 11px;
         text-align: center;
         color: black;
       }
@@ -292,7 +292,7 @@ iframe {
       }
       .html{
         color:black;
-        font-size: 18px;
+        font-size: 22px;
         text-align: center;
       }
       button.kleinfloat2 {
