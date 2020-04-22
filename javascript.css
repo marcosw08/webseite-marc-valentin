@@ -89,7 +89,7 @@ body {
         width: 100%;
         margin: auto;
         background-image: url(einfachhintergrundklein.png);
-        background-repeat: repeat-y; 
+        background-repeat: no-repeat; 
         background-attachment: fixed;
         background-size: 100%;
         padding-bottom: 100px;
