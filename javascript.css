@@ -90,6 +90,8 @@ body {
         margin: auto;
         background-image: url(einfachhintergrundklein.png);
         background-attachment: scroll;
+        background-size: cover;
+        background-repeat: repeat-y;
         background-size: 100%;
         padding-bottom: 100px;
         padding-top: 10px;
