@@ -1,5 +1,6 @@
 body {
   font-family: Verdana,sans-serif;
+  
 }
 .textur {
   display: block;
@@ -113,6 +114,8 @@ button.gross:hover {
   color:black;
   font-size: 40px;
   text-align: center;
+  width: 80%;
+  margin: auto;
 }
 button.kleinfloat2 {
   width: 350px;

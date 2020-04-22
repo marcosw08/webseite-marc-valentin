@@ -61,6 +61,28 @@ body {
     text-align: center;
     font-size: 45px;
   }
+  button.kleinfloat2 {
+    width: 350px;
+    background-color: green;
+    color:white;
+    padding: 15px 32px;
+    text-align: center;
+    display: inline-block;
+    font-size: 30px;
+    -webkit-transition-duration: 1s.3s; /* Safari */
+    transition-duration: 1.3s;
+    border:2px solid Green;
+  }
+  button.kleinfloat2:hover {
+    width: 350px;
+    background-color: white;
+    color:black;
+    padding: 15px 32px;
+    text-align: center;
+    display: inline-block;
+    font-size: 30px;
+    border:2px solid Green;
+  }
   @media (max-width: 700px) {
     .catalina {
         display: block;
@@ -72,6 +94,28 @@ body {
         background-size: 100%;
         padding-bottom: 100px;
         padding-top: 10px;
+      }
+      button.kleinfloat2 {
+        width: 280px;
+        background-color: green;
+        color:white;
+        padding: 15px 32px;
+        text-align: center;
+        display: inline-block;
+        font-size: 30px;
+        -webkit-transition-duration: 1s.3s; /* Safari */
+        transition-duration: 1.3s;
+        border:2px solid Green;
+      }
+      button.kleinfloat2:hover {
+        width: 280px;
+        background-color: white;
+        color:black;
+        padding: 15px 32px;
+        text-align: center;
+        display: inline-block;
+        font-size: 30px;
+        border:2px solid Green;
       }
 
   }
