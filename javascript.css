@@ -90,7 +90,6 @@ body {
         margin: auto;
         background-image: url(einfachhintergrundklein.png);
         background-attachment: scroll;
-        position: fixed;
         background-size: cover;
         background-repeat: repeat-y;
         background-size: 100%;
