@@ -155,11 +155,11 @@ body {
         font-size: 18px;
         height: 32px;
         color: white;
-        background-color: green;
+        background-color: gray;
       }
       .klein {
-        width: 70%;
-        font-size:25px;
+        width: 75%;
+        font: size 22px;
       }
   }
   
