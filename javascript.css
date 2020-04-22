@@ -117,6 +117,49 @@ body {
         font-size: 30px;
         border:2px solid Green;
       }
-
+      h1 {
+        text-align: center;
+        font-size: 35px;
+        
+      }
+      h2 {
+        text-align: center;
+        font-size: 25px;
+      }
+      p {
+        text-align: center;
+        font-size: 17px;
+      }
+        button.gross {
+          background-color: green;
+          color:white;
+          padding: 4px 11px;
+          text-align: center;
+          display: inline-block;
+          font-size: 25px;
+          border-radius: 4px;
+          -webkit-transition-duration: 0.7s; /* Safari */
+          transition-duration: 0.7s;
+          border:2px solid Green;
+      }
+      button.gross:hover {
+          background-color: white;
+          color:black;
+      }
+      input {
+        width: 30%;
+        font-size: 15px;
+      }
+      select {
+        width: 50px;
+        font-size: 20px;
+        height: 32px;
+        color: white;
+        background-color: green;
+      }
+      .klein {
+        width: 70%;
+        font-size:25px;
+      }
   }
   
