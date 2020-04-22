@@ -147,12 +147,12 @@ body {
           color:black;
       }
       input {
-        width: 30%;
-        font-size: 15px;
+        width: 33%;
+        font-size: 14px;
       }
       select {
-        width: 50px;
-        font-size: 20px;
+        width: 55px;
+        font-size: 18px;
         height: 32px;
         color: white;
         background-color: green;
