@@ -147,19 +147,19 @@ body {
           color:black;
       }
       input {
-        width: 33%;
-        font-size: 14px;
+        width: 35%;
+        font-size: 15px;
       }
       select {
-        width: 55px;
+        width: 51px;
         font-size: 18px;
-        height: 32px;
+        height: 28px;
         color: white;
-        background-color: gray;
+        background-color: rgb(83, 82, 82);
       }
       .klein {
         width: 75%;
-        font-size:ew 22px;
+        font-size: 22px;
       }
   }
   
