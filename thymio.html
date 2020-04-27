@@ -162,7 +162,105 @@ motor.right.target =<span class="befehl">0</span>
         <p><br><br>Und so sieht der Programmcode aus. Du kannst ihn kopieren.</p>
         <div class="sourcecode">
                 <pre>
-             Hier kommt Inhalt
+<span class="keyword">var</span> Kreisgrösse =<span class="befehl">8</span>										        <span class="erklärung">#Erstellt eine Variable 'Kreisgrösse'</span>
+<span class="keyword">var</span> Speed =<span class="befehl">1</span>												<span class="erklärung">#Erstellt eine Variable 'Speed'</span>
+<span class="keyword">var</span> Beschäftigung												<span class="erklärung">#Erstellt eine Variable, die den Roboter beschäftigt</span>
+<span class="keyword">call</span> leds.temperature(<span class="befehl">0</span>, <span class="befehl">0</span>)
+<span class="keyword">call</span> leds.rc(<span class="befehl">0</span>)
+
+
+<span class="keyword">if</span> button.center ==<span class="befehl">1</span> <span class="keyword">then</span>
+        <span class="keyword">while</span> button.center ==<span class="befehl">1</span> <span class="keyword">do</span>
+                Beschäftigung=Beschäftigung+<span class="befehl">1</span>
+        <span class="keyword">end</span>
+<span class="keyword">end</span>
+
+<span class="keyword">onevent</span> buttons													<span class="erklärung">#Prüft, welcher Knopf gedrückt wird</span>
+<span class="keyword">if</span> button.left ==<span class="befehl">1</span> and Kreisgrösse != <span class="befehl">9</span> <span class="keyword">then</span>
+        Kreisgrösse=Kreisgrösse+<span class="befehl">1</span>
+<span class="keyword">end</span>
+<span class="keyword">if</span> button.left ==<span class="befehl">1</span> and Kreisgrösse ==<span class="befehl">9</span> <span class="keyword">then</span>
+        Kreisgrösse =<span class="befehl">1</span>
+<span class="keyword">end</span>
+<span class="keyword">if</span> button.right ==<span class="befehl">1</span> and Kreisgrösse !=<span class="befehl">0</span> <span class="keyword">then</span>
+        Kreisgrösse=Kreisgrösse-<span class="befehl">1</span>
+<span class="keyword">end</span>
+<span class="keyword">if</span>  button.right ==<span class="befehl">1</span> and Kreisgrösse ==<span class="befehl">0</span> <span class="keyword">then</span>
+        Kreisgrösse =<span class="befehl">8</span>
+<span class="keyword">end</span>
+
+
+<span class="keyword">if</span> Kreisgrösse ==<span class="befehl">8</span> <span class="keyword">then</span>											<span class="erklärung">#Passt den LED-Kreis an.</span>
+        <span class="keyword">call</span> leds.circle(<span class="befehl">10</span>, <span class="befehl">0</span>, <span class="befehl">0</span>, <span class="befehl">0</span>, <span class="befehl">0</span>, <span class="befehl">0</span>, <span class="befehl">0</span>, <span class="befehl">0</span>)
+<span class="keyword">end</span>
+<span class="keyword">if</span> Kreisgrösse ==<span class="befehl">7</span> <span class="keyword">then</span>
+        <span class="keyword">call</span> leds.circle(<span class="befehl">10</span>, <span class="befehl">10</span>, <span class="befehl">0</span>, <span class="befehl">0</span>, <span class="befehl">0</span>, <span class="befehl">0</span>, <span class="befehl">0</span>, <span class="befehl">0</span>)
+<span class="keyword">end</span>
+<span class="keyword">if</span> Kreisgrösse ==6 <span class="keyword">then</span>
+        <span class="keyword">call</span> leds.circle(<span class="befehl">10</span>, <span class="befehl">10</span>, <span class="befehl">10</span>, <span class="befehl">0</span>, <span class="befehl">0</span>, <span class="befehl">0</span>, <span class="befehl">0</span>, <span class="befehl">0</span>)
+<span class="keyword">end</span>
+<span class="keyword">if</span> Kreisgrösse ==5 <span class="keyword">then</span>
+        <span class="keyword">call</span> leds.circle(<span class="befehl">10</span>, <span class="befehl">10</span>, <span class="befehl">10</span>, <span class="befehl">10</span>, <span class="befehl">0</span>, <span class="befehl">0</span>, <span class="befehl">0</span>, <span class="befehl">0</span>)
+<span class="keyword">end</span>
+<span class="keyword">if</span> Kreisgrösse ==4 <span class="keyword">then</span>
+        <span class="keyword">call</span> leds.circle(<span class="befehl">10</span>, <span class="befehl">10</span>, <span class="befehl">10</span>, <span class="befehl">10</span>, <span class="befehl">10</span>, <span class="befehl">0</span>, <span class="befehl">0</span>, <span class="befehl">0</span>)
+<span class="keyword">end</span>
+<span class="keyword">if</span> Kreisgrösse ==3 <span class="keyword">then</span>
+        <span class="keyword">call</span> leds.circle(<span class="befehl">10</span>, <span class="befehl">10</span>, <span class="befehl">10</span>, <span class="befehl">10</span>, <span class="befehl">10</span>, <span class="befehl">10</span>, <span class="befehl">0</span>, <span class="befehl">0</span>)
+<span class="keyword">end</span>        
+<span class="keyword">if</span> Kreisgrösse ==2 <span class="keyword">then</span>
+        <span class="keyword">call</span> leds.circle(<span class="befehl">10</span>, <span class="befehl">10</span>, <span class="befehl">10</span>, <span class="befehl">10</span>, <span class="befehl">10</span>, <span class="befehl">10</span>, <span class="befehl">10</span>, <span class="befehl">0</span>)
+<span class="keyword">end</span>
+<span class="keyword">if</span> Kreisgrösse ==1 <span class="keyword">then</span>
+        <span class="keyword">call</span> leds.circle(<span class="befehl">10</span>, <span class="befehl">10</span>, <span class="befehl">10</span>, <span class="befehl">10</span>, <span class="befehl">10</span>, <span class="befehl">10</span>, <span class="befehl">10</span>, <span class="befehl">10</span>)
+<span class="keyword">end</span>
+
+
+<span class="keyword">if</span> button.left ==<span class="befehl">1</span> or button.right ==<span class="befehl">1</span> <span class="keyword">then</span>				  	<span class="erklärung">#Wartet, bis der Knopf losgelassen wurde.</span>
+        <span class="keyword">while</span> button.left ==<span class="befehl">1</span> or button.right ==<span class="befehl">1</span> <span class="keyword">do</span>
+                Beschäftigung=Beschäftigung+<span class="befehl">1</span>
+        <span class="keyword">end</span>
+<span class="keyword">end</span>
+
+
+<span class="keyword">if</span> button.forward ==<span class="befehl">1</span> and Speed !=<span class="befehl">9</span> <span class="keyword">then</span>						<span class="erklärung">#Prüft welcher Knopf gedrückt wird</span>
+        Speed=Speed+<span class="befehl">1</span>
+<span class="keyword">end</span>
+<span class="keyword">if</span> button.forward ==<span class="befehl">1</span> and Speed ==<span class="befehl">9</span> <span class="keyword">then</span>
+        Speed=1
+<span class="keyword">end</span>
+<span class="keyword">if</span> button.backward ==<span class="befehl">1</span> and Speed !=<span class="befehl">0</span> <span class="keyword">then</span>
+        Speed=Speed-<span class="befehl">1</span>
+<span class="keyword">end</span>
+<span class="keyword">if</span> button.backward ==<span class="befehl">1</span> and Speed ==<span class="befehl">9</span> <span class="keyword">then</span>
+        Speed=<span class="befehl">8</span>
+<span class="keyword">end</span>
+
+
+<span class="keyword">call</span> leds.buttons(Speed, Speed, Speed, Speed)					<span class="erklärung">#Passt die Helligkeit der Lichter an</span>
+
+
+<span class="keyword">if</span> button.forward ==<span class="befehl">1</span> or button.backward ==<span class="befehl">1</span> <span class="keyword">then</span>				<span class="erklärung">#Wartet, bis der Knopf losgelassen wurde.</span>
+        <span class="keyword">while</span> button.forward ==1 or button.backward ==1 <span class="keyword">do</span>
+                Beschäftigung=Beschäftigung+<span class="befehl">1</span>
+        <span class="keyword">end</span>
+<span class="keyword">end</span>
+
+
+<span class="keyword">if</span> button.center ==<span class="befehl">1</span> <span class="keyword">then</span>										<span class="erklärung#Lässt den Roboter fahren.</span>
+        <span class="keyword">while</span> button.center ==<span class="befehl">1</span> <span class="keyword">do</span>
+                Beschäftigung=Beschäftigung+<span class="befehl">1</span>
+        <span class="keyword">end</span>
+        <span class="keyword">while</span> button.center ==<span class="befehl">0</span> <span class="keyword">do</span>
+                motor.left.target =Speed*<span class="befehl">50</span>
+                motor.right.target =Speed*<span class="befehl">50</span>/(Kreisgrösse*<span class="befehl">2</span>)
+        <span class="keyword">if</span>
+        motor.left.target =<span class="befehl">0</span>
+        motor.right.target =<span class="befehl">0</span>
+        <span class="keyword">while</span> button.center ==<span class="befehl">1</span> <span class="keyword">do</span>
+                Beschäftigung=Beschäftigung+<span class="befehl">1</span>
+        <span class="keyword">end</span>
+<span class="keyword">end</span>
                 </pre>
         </div>
         <h2<br><br><br><br>
