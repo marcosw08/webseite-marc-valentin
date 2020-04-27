@@ -250,6 +250,7 @@ iframe {
         background-attachment: fixed;
         background-size: 100%;
         padding-bottom: 100px;
+        -webkit-background-size: cover;
         padding-top: 10px;
       }
       .catalina {

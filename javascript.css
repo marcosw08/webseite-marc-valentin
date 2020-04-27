@@ -91,6 +91,7 @@ body {
         background-image: url(einfachhintergrundklein.png);
         background-attachment: fixed;
         background-repeat: repeat-y;
+        -webkit-background-size: cover;
         background-size: 100%;
         padding-bottom: 100px;
         padding-top: 10px;
