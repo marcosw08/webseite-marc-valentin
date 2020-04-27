@@ -240,7 +240,6 @@ iframe {
         background-size: 100%;
         padding-bottom: 100px;
         padding-top: 10px;
-        -webkit-background-size: cover;
       }
       .hinterblock {
         display: block;
@@ -264,7 +263,6 @@ iframe {
         background-size: 100%;
         padding-bottom: 100px;
         padding-top: 10px;
-        -webkit-background-size: cover;
       }
       iframe {
         width: 340px;
@@ -292,7 +290,6 @@ iframe {
         background-size: 100%;
         padding-bottom: 100px;
         padding-top: 10px;
-        -webkit-background-size: cover;
       }
       .html{
         color:black;
