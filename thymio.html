@@ -122,6 +122,31 @@ motor.right.target =<span class="befehl">0</span>
                         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                         allowfullscreen></iframe>
         </p>
+        <p><br><br>Und so sieht der Programmcode aus. Du kannst ihn kopieren.</p>
+        <div class="sourcecode">
+                <pre>
+<span class="keyword">var</span> a =<span class="befehl">0</span>																	<span class="erklärung">#Erstellt eine Variable "a"</span>
+
+<span class="keyword">onevent</span> buttons														<span class="erklärung">#Schaltet die Motoren des Roboters ein, nachdem der Knopf</span>
+<span class="keyword">if</span> button.forward ==<span class="befehl">1</span> <span class="keyword">then</span>											<span class="erklärung">#vorwärts gedrückt wurde, und ändert das Tempo der</span>
+        <span class="keyword">while</span> button.center ==<span class="befehl">1</span> <span class="keyword">do</span>										<span class="erklärung">#einzelnen Motoren abhängig vom Untergrund.</span>
+                a=<span class="befehl">1</span>
+        <span class="keyword">end</span>
+        <span class="keyword">while</span> button.center ==<span class="befehl">0</span> <span class="keyword">do</span>
+                motor.left.target =(prox.ground.delta [<span class="befehl">0</span>]+<span class="befehl">10</span>)/<span class="befehl">2</span>
+                motor.right.target =(prox.ground.delta [<span class="befehl">1</span>]+<span class="befehl">10</span>)/<span class="befehl">2</span>
+        <span class="keyword">end</span>
+<span class="keyword">end</span>
+<span class="keyword">if</span> button.center ==<span class="befehl">1</span> <span class="keyword">then</span>											<span class="erklärung">#Schaltet alle Motoren aus, nachdem die Taste in der</span>
+        <span class="keyword">while</span> button.center ==<span class="befehl">1</span> <span class="keyword">do</span>										<span class="erklärung">#in der Mitte gedrückt wurde.</span>
+                a=<span class="befehl">0</span>
+        <span class="keyword">end</span>
+        motor.left.target =<span class="befehl">0</span>
+        motor.right.target =<span class="befehl">0</span>	
+<span class="keyword">end</span>
+                </pre>
+        </div>
+
         <h2><br><br><br><br>Die Ampel</h2>
         <p>Der Thymio kann mit einem Knopfdruck als Ampel steuern.</p>
         <p><iframe src="https://www.youtube.com/embed/_LmhfqlJiLg" frameborder="0"
