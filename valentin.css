@@ -204,6 +204,9 @@ iframe {
 .fotoultraklein {
   zoom: 100%;
 }
+.fotobedwarsklein {
+  zoom: 60%;
+}
 @media (max-width: 700px) {
       h1{
       font-size: 40px;
@@ -323,6 +326,9 @@ iframe {
       }
       .fotoultraklein {
         zoom: 24%;
+      }
+      .fotobedwarsklein {
+        zoom: 15%;
       }
       
 }
