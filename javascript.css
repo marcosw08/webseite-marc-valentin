@@ -18,6 +18,22 @@ body {
   option {
       color: white;
   }
+  input.gross2 {
+    background-color: green;
+    color:white;
+    padding: 7px 16px;
+    text-align: center;
+    display: inline-block;
+    font-size: 40px;
+    border-radius: 4px;
+    -webkit-transition-duration: 0.7s; /* Safari */
+    transition-duration: 0.7s;
+    border:2px solid green;
+  }
+  input.gross2:hover {
+    background-color: white;
+    color: black;
+  }
   button.gross {
       background-color: green;
       color:white;
