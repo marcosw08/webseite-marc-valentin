@@ -185,12 +185,12 @@ body {
         font-size: 22px;
       }
       input.gross2 {
-        background-color: white;
-        color:black;
+        background-color: green;
+        color:white;
         padding: 7px 16px;
         text-align: center;
         display: inline-block;
-        font-size: 30px;
+        font-size: 40px;
         margin: 5px;
         height: 80px;
         width: 80px;
@@ -198,10 +198,6 @@ body {
         -webkit-transition-duration: 0.7s; /* Safari */
         transition-duration: 0.7s;
         border:2px solid green;
-      }
-      input.gross2:hover {
-        background-color: white;
-        color: black;
       }
   }
   
