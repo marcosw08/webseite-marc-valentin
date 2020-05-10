@@ -194,7 +194,7 @@ body {
         margin: 5px;
         height: 80px;
         width: 80px;
-        border-radius: 30px;
+        border-radius: 25px;
         -webkit-transition-duration: 0.7s; /* Safari */
         transition-duration: 0.7s;
         border:2px solid green;
