@@ -25,7 +25,10 @@ body {
     text-align: center;
     display: inline-block;
     font-size: 40px;
-    border-radius: 4px;
+    margin: 5px;
+    height: 80px;
+    width: 80px;
+    border-radius: 30px;
     -webkit-transition-duration: 0.7s; /* Safari */
     transition-duration: 0.7s;
     border:2px solid green;
@@ -38,10 +41,13 @@ body {
       background-color: green;
       color:white;
       padding: 7px 16px;
+      margin: 5px;
       text-align: center;
       display: inline-block;
       font-size: 40px;
-      border-radius: 4px;
+      width: 80px;
+      height: 80px;
+      border-radius: 30px;
       -webkit-transition-duration: 0.7s; /* Safari */
       transition-duration: 0.7s;
       border:2px solid Green;
@@ -56,8 +62,9 @@ body {
   }
   .catalina {
     display: block;
+    width: 100%;
     margin: auto;
-    background-image: url(Catalina.png);
+    background-image: url(ios-11-wallpaper-for-ipad-1.jpg);
     background-repeat: repeat-y; 
     background-attachment: fixed;
     background-size: 100%;
@@ -101,17 +108,16 @@ body {
   }
   @media (max-width: 700px) {
     .catalina {
-        display: block;
-        width: 100%;
-        margin: auto;
-        background-image: url(einfachhintergrundklein.png);
-        background-attachment: fixed;
-        background-repeat: repeat-y;
-        -webkit-background-size: cover;
-        background-size: 100%;
-        padding-bottom: 100px;
-        padding-top: 10px;
-      }
+      display: block;
+      width: 100%;
+      margin: auto;
+      background-image: url(iosklein.jpg);
+      background-repeat: repeat-y; 
+      background-attachment: fixed;
+      background-size: 100%;
+      padding-bottom: 100px;
+      padding-top: 10px;
+    }
       button.kleinfloat2 {
         width: 280px;
         background-color: green;
@@ -153,8 +159,8 @@ body {
           padding: 4px 11px;
           text-align: center;
           display: inline-block;
-          font-size: 25px;
-          border-radius: 4px;
+          font-size: 35px;
+          border-radius: 30px;
           -webkit-transition-duration: 0.7s; /* Safari */
           transition-duration: 0.7s;
           border:2px solid Green;
@@ -164,8 +170,8 @@ body {
           color:black;
       }
       input {
-        width: 33%;
-        font-size: 14px;
+        width: 80%;
+        font-size: 35px;
       }
       select {
         width: 51px;
