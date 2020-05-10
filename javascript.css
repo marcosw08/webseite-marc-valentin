@@ -184,5 +184,20 @@ body {
         width: 75%;
         font-size: 22px;
       }
+      input.gross2 {
+        background-color: black;
+        color:white;
+        padding: 7px 16px;
+        text-align: center;
+        display: inline-block;
+        font-size: 40px;
+        margin: 5px;
+        height: 80px;
+        width: 80px;
+        border-radius: 30px;
+        -webkit-transition-duration: 0.7s; /* Safari */
+        transition-duration: 0.7s;
+        border:2px solid green;
+      }
   }
   
