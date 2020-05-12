@@ -38,13 +38,17 @@ body {
 .catalina {
   display: block;
   width: 100%;
-  margin: auto;
+  margin-top: 0px;
+  margin-bottom: auto;
+  margin-left: auto;
+  margin-right: auto;
   background-image: url(ios-11-wallpaper-for-ipad-1.jpg);
   background-repeat: repeat-y; 
   background-attachment: fixed;
   background-size: 100%;
   padding-bottom: 100px;
-  padding-top: 10px;
+  padding-top: 0px;
+  width: 100%;
 }
 .prozessor {
   display: block;
@@ -106,6 +110,44 @@ button.gross:hover {
   border-radius: 4px;
   border:2px solid Green;
 }
+button.menuefloat {
+  background-color: black;
+  color:rgb(158, 154, 154);
+  padding: 15px 32px;
+  text-align: center;
+  display: inline-block;
+  font-size: 30px;
+  border-radius: 0px;
+  -webkit-transition-duration: 0.7s; /* Safari */
+  transition-duration: 0.7s;
+  border:2px solid black;
+  width: 25%;
+
+
+}
+button.menuefloat:hover {
+  background-color: black;
+  color:rgb(255, 255, 255);
+}
+button.menuehomefloat {
+  background-color: black;
+  color:rgb(255, 255, 255);
+  padding: 15px 32px;
+  text-align: center;
+  display: inline-block;
+  font-size: 30px;
+  border-radius: 0px;
+  -webkit-transition-duration: 0.7s; /* Safari */
+  transition-duration: 0.7s;
+  border:2px solid black;
+  width: 25%;
+
+
+}
+button.menuehomefloat:hover {
+  background-color: black;
+  color:rgb(255, 255, 255);
+}
 .youtube {
   width: 80%;
   height: 300px;
@@ -142,8 +184,8 @@ button.kleinfloat2:hover {
 
 .content{
 	margin: auto;
-	max-width: 90%;
-  width: 1300px;
+	max-width: 100%;
+  width: 1900px;
 }
 main{
 	padding: 1% 0;
@@ -206,6 +248,46 @@ iframe {
 }
 .fotobedwarsklein {
   zoom: 60%;
+}
+@media (max-width: 1100px) {
+  button.menuefloat {
+    background-color: black;
+    color:rgb(158, 154, 154);
+    padding: 15px 32px;
+    text-align: center;
+    display: inline-block;
+    font-size: 20px;
+    border-radius: 0px;
+    -webkit-transition-duration: 0.7s; /* Safari */
+    transition-duration: 0.7s;
+    border:2px solid black;
+    width: 25%;
+  
+  
+  }
+  button.menuefloat:hover {
+    background-color: black;
+    color:rgb(255, 255, 255);
+  }
+  button.menuehomefloat {
+    background-color: black;
+    color:rgb(255, 255, 255);
+    padding: 15px 32px;
+    text-align: center;
+    display: inline-block;
+    font-size: 20px;
+    border-radius: 0px;
+    -webkit-transition-duration: 0.7s; /* Safari */
+    transition-duration: 0.7s;
+    border:2px solid black;
+    width: 25%;
+  
+  
+  }
+  button.menuehomefloat:hover {
+    background-color: black;
+    color:rgb(255, 255, 255);
+  }
 }
 @media (max-width: 700px) {
       h1{
@@ -330,5 +412,44 @@ iframe {
       .fotobedwarsklein {
         zoom: 15%;
       }
+      button.menuefloat {
+        background-color: black;
+        color:rgb(158, 154, 154);
+        padding: 15px 32px;
+        text-align: center;
+        display: inline-block;
+        font-size: 11px;
+        border-radius: 0px;
+        -webkit-transition-duration: 0.7s; /* Safari */
+        transition-duration: 0.7s;
+        border:2px solid black;
+        width: 25%;
+      
+      
+      }
+      button.menuefloat:hover {
+        background-color: black;
+        color:rgb(255, 255, 255);
+      }
+      button.menuehomefloat {
+        background-color: black;
+        color:rgb(255, 255, 255);
+        padding: 15px 32px;
+        text-align: center;
+        display: inline-block;
+        font-size: 11px;
+        border-radius: 0px;
+        -webkit-transition-duration: 0.7s; /* Safari */
+        transition-duration: 0.7s;
+        border:2px solid black;
+        width: 25%;
+      
+      
+      }
+      button.menuehomefloat:hover {
+        background-color: black;
+        color:rgb(255, 255, 255);
+      }
+      
       
 }
