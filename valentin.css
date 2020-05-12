@@ -121,7 +121,7 @@ button.menuefloat {
   -webkit-transition-duration: 0.7s; /* Safari */
   transition-duration: 0.7s;
   border:2px solid black;
-  width: 25%;
+  width: 20%;
 
 
 }
@@ -140,7 +140,7 @@ button.menuehomefloat {
   -webkit-transition-duration: 0.7s; /* Safari */
   transition-duration: 0.7s;
   border:2px solid black;
-  width: 25%;
+  width: 20%;
 
 
 }
@@ -261,7 +261,7 @@ iframe {
     -webkit-transition-duration: 0.7s; /* Safari */
     transition-duration: 0.7s;
     border:2px solid black;
-    width: 25%;
+    width: 20%;
   
   
   }
@@ -280,7 +280,7 @@ iframe {
     -webkit-transition-duration: 0.7s; /* Safari */
     transition-duration: 0.7s;
     border:2px solid black;
-    width: 25%;
+    width: 20%;
   
   
   }
@@ -423,7 +423,7 @@ iframe {
         -webkit-transition-duration: 0.7s; /* Safari */
         transition-duration: 0.7s;
         border:2px solid black;
-        width: 25%;
+        width: 20%;
       
       
       }
@@ -442,7 +442,7 @@ iframe {
         -webkit-transition-duration: 0.7s; /* Safari */
         transition-duration: 0.7s;
         border:2px solid black;
-        width: 25%;
+        width: 20%;
       
       
       }
