@@ -1,23 +1,11 @@
 body {
-  font-family: Verdana,sans-serif;
-  
+  font-family: Verdana,sans-serif;  
 }
 .textur {
   display: block;
   width: 90%;
   margin: auto;
   background-image: url(Textur.png);
-  background-repeat: repeat-y; 
-  background-attachment: fixed;
-  background-size: 100%;
-  padding-bottom: 100px;
-  padding-top: 10px;
-}
-.ersthinter {
-  display: block;
-  width: 100%;
-  margin: auto;
-  background-image: url(einfach\ hintergrund.jpg);
   background-repeat: repeat-y; 
   background-attachment: fixed;
   background-size: 100%;
@@ -314,17 +302,6 @@ iframe {
         font-size: 11px;
         text-align: center;
         color: black;
-      }
-      .ersthinter {
-        display: block;
-        width: 100%;
-        margin: auto;
-        background-image: url(einfachkleinhintergrund.jpg);
-        background-repeat: repeat-y; 
-        background-attachment: fixed;
-        background-size: 100%;
-        padding-bottom: 100px;
-        padding-top: 10px;
       }
       .hinterblock {
         display: block;
