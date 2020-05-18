@@ -237,6 +237,14 @@ iframe {
 .fotobedwarsklein {
   zoom: 60%;
 }
+.nolink {
+  text-decoration: none;
+  color: rgb(68, 68, 214);
+}
+.nolink:hover {
+  text-decoration: initial;
+  color: rgb(68, 68, 214);
+}
 @media (max-width: 1100px) {
   button.menuefloat {
     background-color: black;
@@ -276,9 +284,15 @@ iframe {
     background-color: black;
     color:rgb(255, 255, 255);
   }
+  .titelgrundlage {
+    font-size: 100px;
+  }
 }
 @media (max-width: 700px) {
-      h1{
+    .titelgrundlage {
+    font-size: 40px;
+     } 
+    h1{
       font-size: 40px;
       text-align: center;
       color: black;
