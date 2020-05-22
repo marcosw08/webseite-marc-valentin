@@ -40,6 +40,10 @@
     background-image: url(javascript.jpg);
     background-repeat: no-repeat;
   }
+  .phphintergrund {
+    background-image: url(php.png);
+    background-repeat: no-repeat;
+  }
   /*
    * Dummy devices (replace them with your own or something else entirely!)
    */
