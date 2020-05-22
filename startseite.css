@@ -19,6 +19,16 @@
     color: #fff;
     text-decoration: none;
   }
+  .indexhintergrund {
+    background-image: url(indexminecraft.jpg);
+    zoom: 100%;
+  }
+  .programmhintergrund {
+    background-image: url(programmer.jpg);
+  }
+  .fussballhintergrund {
+    background-image: url(football.jpg);
+  }
   
   /*
    * Dummy devices (replace them with your own or something else entirely!)
