@@ -1,118 +1,152 @@
 body {
-    font-family: Verdana,sans-serif;
-    text-align: center;
-    width: 1000px;
-    margin: auto;
-  }
-  input {
-    width: 35%;
-    font-size: 41px;
-  }
-  select {
-      width: 69px;
-      font-size: 41px;
-      height: 53px;
-      color: white;
-      background-color: green;
-  }
-  option {
-      color: white;
-  }
-  input.gross2 {
-    background-color: green;
-    color:white;
-    padding: 7px 16px;
-    text-align: center;
-    display: inline-block;
-    font-size: 40px;
-    margin: 5px;
-    height: 80px;
-    width: 80px;
-    border-radius: 30px;
-    -webkit-transition-duration: 0.7s; /* Safari */
-    transition-duration: 0.7s;
-    border:2px solid green;
-  }
-  input.gross2:hover {
-    background-color: white;
-    color: black;
-  }
-  button.gross {
-      background-color: green;
-      color:white;
-      padding: 7px 16px;
-      margin: 5px;
-      text-align: center;
-      display: inline-block;
-      font-size: 40px;
-      width: 80px;
-      height: 80px;
-      border-radius: 30px;
-      -webkit-transition-duration: 0.7s; /* Safari */
-      transition-duration: 0.7s;
-      border:2px solid Green;
-  }
-  button.gross:hover {
-      background-color: white;
-      color:black;
-  }
-  .klein {
-    width: 60%;
-    font-size:38px;
-  }
-  .catalina {
-    display: block;
-    width: 100%;
-    margin: auto;
-    background-image: url(ios-11-wallpaper-for-ipad-1.jpg);
-    background-repeat: repeat-y; 
-    background-attachment: fixed;
-    background-size: 100%;
-    padding-bottom: 100px;
-    padding-top: 10px;
-  }
-  h1 {
-      text-align: center;
-      font-size: 70px;
-      
-  }
-  p {
-    text-align: center;
-    font-size: 30px;
-  }
-  h2 {
-    text-align: center;
-    font-size: 45px;
-  }
-  button.kleinfloat2 {
-    width: 350px;
-    background-color: green;
-    color:white;
-    padding: 15px 32px;
-    text-align: center;
-    display: inline-block;
-    font-size: 30px;
-    -webkit-transition-duration: 1s.3s; /* Safari */
-    transition-duration: 1.3s;
-    border:2px solid Green;
-  }
-  button.kleinfloat2:hover {
-    width: 350px;
-    background-color: white;
-    color:black;
-    padding: 15px 32px;
-    text-align: center;
-    display: inline-block;
-    font-size: 30px;
-    border:2px solid Green;
-  }
+  font-family: Verdana,sans-serif;
+  text-align: center;
+  width: 1000px;
+  margin: auto;
+}
+input {
+  width: 35%;
+  font-size: 41px;
+}
+select {
+  width: 69px;
+  font-size: 41px;
+  height: 53px;
+  color: white;
+  background-color: green;
+}
+option {
+    color: white;
+}
+input.gross2 {
+  background-color: green;
+  color:white;
+  padding: 7px 16px;
+  text-align: center;
+  display: inline-block;
+  font-size: 40px;
+  margin: 5px;
+  height: 80px;
+  width: 80px;
+  border-radius: 30px;
+  -webkit-transition-duration: 0.7s; /* Safari */
+  transition-duration: 0.7s;
+  border:2px solid green;
+}
+input.gross2:hover {
+  background-color: white;
+  color: black;
+}
+button.gross {
+  background-color: green;
+  color:white;
+  padding: 7px 16px;
+  margin: 5px;
+  text-align: center;
+  display: inline-block;
+  font-size: 40px;
+  width: 80px;
+  height: 80px;
+  border-radius: 30px;
+  -webkit-transition-duration: 0.7s; /* Safari */
+  transition-duration: 0.7s;
+  border:2px solid Green;
+}
+button.gross:hover {
+  background-color: white;
+  color:black;
+}
+.klein {
+  width: 60%;
+  font-size:38px;
+}
+.catalina {
+  display: block;
+  width: 100%;
+  margin: auto;
+  background-image: url(ios-11-wallpaper-for-ipad-1.jpg);
+  background-repeat: repeat-y; 
+  background-attachment: fixed;
+  background-size: 100%;
+  padding-bottom: 100px;
+}
+h1 {
+  text-align: center;
+  font-size: 70px;
+  font-weight: bold;  
+}
+p {
+  text-align: center;
+  font-size: 30px;
+}
+h2 {
+  text-align: center;
+  font-size: 45px;
+}
+button.kleinfloat2 {
+  width: 350px;
+  background-color: green;
+  color:white;
+  padding: 15px 32px;
+  text-align: center;
+  display: inline-block;
+  font-size: 30px;
+  -webkit-transition-duration: 1s.3s; /* Safari */
+  transition-duration: 1.3s;
+  border:2px solid Green;
+}
+button.kleinfloat2:hover {
+  width: 350px;
+  background-color: white;
+  color:black;
+  padding: 15px 32px;
+  text-align: center;
+  display: inline-block;
+  font-size: 30px;
+  border:2px solid Green;
+}
+button.menuefloat {
+  background-color: black;
+  color:rgb(158, 154, 154);
+  padding: 15px 32px;
+  text-align: center;
+  display: inline-block;
+  font-size: 30px;
+  border-radius: 0px;
+  -webkit-transition-duration: 0.7s; /* Safari */
+  transition-duration: 0.7s;
+  border:2px solid black;
+  width: 20%;
+}
+button.menuefloat:hover {
+  background-color: black;
+  color:rgb(255, 255, 255);
+}
+button.menuehomefloat {
+  background-color: black;
+  color:rgb(255, 255, 255);
+  padding: 15px 32px;
+  text-align: center;
+  display: inline-block;
+  font-size: 30px;
+  border-radius: 0px;
+  -webkit-transition-duration: 0.7s; /* Safari */
+  transition-duration: 0.7s;
+  border:2px solid black;
+  width: 20%;
+}
+button.menuehomefloat:hover {
+  background-color: black;
+  color:rgb(255, 255, 255);
+}
+@media (max-width: 1100px) {
   button.menuefloat {
     background-color: black;
     color:rgb(158, 154, 154);
     padding: 15px 32px;
     text-align: center;
     display: inline-block;
-    font-size: 30px;
+    font-size: 20px;
     border-radius: 0px;
     -webkit-transition-duration: 0.7s; /* Safari */
     transition-duration: 0.7s;
@@ -131,7 +165,7 @@ body {
     padding: 15px 32px;
     text-align: center;
     display: inline-block;
-    font-size: 30px;
+    font-size: 20px;
     border-radius: 0px;
     -webkit-transition-duration: 0.7s; /* Safari */
     transition-duration: 0.7s;
@@ -144,176 +178,136 @@ body {
     background-color: black;
     color:rgb(255, 255, 255);
   }
-  @media (max-width: 1100px) {
-    button.menuefloat {
-      background-color: black;
-      color:rgb(158, 154, 154);
-      padding: 15px 32px;
+}
+@media (max-width: 700px) {
+  .catalina {
+    display: block;
+    width: 100%;
+    margin: auto;
+    background-image: url(iosklein.jpg);
+    background-repeat: repeat-y; 
+    background-attachment: fixed;
+    background-size: 100%;
+    padding-bottom: 100px;
+    padding-top: 10px;
+  }
+  button.kleinfloat2 {
+    width: 280px;
+    background-color: green;
+    color:white;
+    padding: 15px 32px;
+    text-align: center;
+    display: inline-block;
+    font-size: 30px;
+    -webkit-transition-duration: 1s.3s; /* Safari */
+    transition-duration: 1.3s;
+    border:2px solid Green;
+  }
+  button.kleinfloat2:hover {
+    width: 280px;
+    background-color: white;
+    color:black;
+    padding: 15px 32px;
+    text-align: center;
+    display: inline-block;
+    font-size: 30px;
+    border:2px solid Green;
+  }
+  h1 {
+    text-align: center;
+    font-size: 35px;
+    
+  }
+  h2 {
+    text-align: center;
+    font-size: 25px;
+  }
+  p {
+    text-align: center;
+    font-size: 17px;
+  }
+    button.gross {
+      background-color: green;
+      color:white;
+      padding: 4px 11px;
       text-align: center;
       display: inline-block;
-      font-size: 20px;
-      border-radius: 0px;
+      font-size: 35px;
+      border-radius: 30px;
       -webkit-transition-duration: 0.7s; /* Safari */
       transition-duration: 0.7s;
-      border:2px solid black;
-      width: 20%;
-    
-    
-    }
-    button.menuefloat:hover {
-      background-color: black;
-      color:rgb(255, 255, 255);
-    }
-    button.menuehomefloat {
-      background-color: black;
-      color:rgb(255, 255, 255);
-      padding: 15px 32px;
-      text-align: center;
-      display: inline-block;
-      font-size: 20px;
-      border-radius: 0px;
-      -webkit-transition-duration: 0.7s; /* Safari */
-      transition-duration: 0.7s;
-      border:2px solid black;
-      width: 20%;
-    
-    
-    }
-    button.menuehomefloat:hover {
-      background-color: black;
-      color:rgb(255, 255, 255);
-    }
+      border:2px solid Green;
   }
-  @media (max-width: 700px) {
-    .catalina {
-      display: block;
-      width: 100%;
-      margin: auto;
-      background-image: url(iosklein.jpg);
-      background-repeat: repeat-y; 
-      background-attachment: fixed;
-      background-size: 100%;
-      padding-bottom: 100px;
-      padding-top: 10px;
-    }
-      button.kleinfloat2 {
-        width: 280px;
-        background-color: green;
-        color:white;
-        padding: 15px 32px;
-        text-align: center;
-        display: inline-block;
-        font-size: 30px;
-        -webkit-transition-duration: 1s.3s; /* Safari */
-        transition-duration: 1.3s;
-        border:2px solid Green;
-      }
-      button.kleinfloat2:hover {
-        width: 280px;
-        background-color: white;
-        color:black;
-        padding: 15px 32px;
-        text-align: center;
-        display: inline-block;
-        font-size: 30px;
-        border:2px solid Green;
-      }
-      h1 {
-        text-align: center;
-        font-size: 35px;
-        
-      }
-      h2 {
-        text-align: center;
-        font-size: 25px;
-      }
-      p {
-        text-align: center;
-        font-size: 17px;
-      }
-        button.gross {
-          background-color: green;
-          color:white;
-          padding: 4px 11px;
-          text-align: center;
-          display: inline-block;
-          font-size: 35px;
-          border-radius: 30px;
-          -webkit-transition-duration: 0.7s; /* Safari */
-          transition-duration: 0.7s;
-          border:2px solid Green;
-      }
-      button.gross:hover {
-          background-color: white;
-          color:black;
-      }
-      input {
-        width: 80%;
-        font-size: 35px;
-      }
-      select {
-        width: 51px;
-        font-size: 18px;
-        height: 28px;
-        color: white;
-        background-color: rgb(83, 82, 82);
-      }
-      .klein {
-        width: 75%;
-        font-size: 22px;
-      }
-      input.gross2 {
-        background-color: green;
-        color:white;
-        padding: 4px 11px;
-        text-align: center;
-        display: inline-block;
-        font-size: 40px;
-        margin: 5px;
-        height: 80px;
-        width: 80px;
-        border-radius: 25px;
-        -webkit-transition-duration: 0.7s; /* Safari */
-        transition-duration: 0.7s;
-        border:2px solid green;
-      }
-      button.menuefloat {
-        background-color: black;
-        color:rgb(158, 154, 154);
-        padding: 15px 32px;
-        text-align: center;
-        display: inline-block;
-        font-size: 11px;
-        border-radius: 0px;
-        -webkit-transition-duration: 0.7s; /* Safari */
-        transition-duration: 0.7s;
-        border:2px solid black;
-        width: 20%;
-      
-      
-      }
-      button.menuefloat:hover {
-        background-color: black;
-        color:rgb(255, 255, 255);
-      }
-      button.menuehomefloat {
-        background-color: black;
-        color:rgb(255, 255, 255);
-        padding: 15px 32px;
-        text-align: center;
-        display: inline-block;
-        font-size: 11px;
-        border-radius: 0px;
-        -webkit-transition-duration: 0.7s; /* Safari */
-        transition-duration: 0.7s;
-        border:2px solid black;
-        width: 20%;
-      
-      
-      }
-      button.menuehomefloat:hover {
-        background-color: black;
-        color:rgb(255, 255, 255);
-      }
+  button.gross:hover {
+      background-color: white;
+      color:black;
   }
+  input {
+    width: 80%;
+    font-size: 35px;
+  }
+  select {
+    width: 51px;
+    font-size: 18px;
+    height: 28px;
+    color: white;
+    background-color: rgb(83, 82, 82);
+  }
+  .klein {
+    width: 75%;
+    font-size: 22px;
+  }
+  input.gross2 {
+    background-color: green;
+    color:white;
+    padding: 4px 11px;
+    text-align: center;
+    display: inline-block;
+    font-size: 40px;
+    margin: 5px;
+    height: 80px;
+    width: 80px;
+    border-radius: 25px;
+    -webkit-transition-duration: 0.7s; /* Safari */
+    transition-duration: 0.7s;
+    border:2px solid green;
+  }
+  button.menuefloat {
+    background-color: black;
+    color:rgb(158, 154, 154);
+    padding: 15px 32px;
+    text-align: center;
+    display: inline-block;
+    font-size: 11px;
+    border-radius: 0px;
+    -webkit-transition-duration: 0.7s; /* Safari */
+    transition-duration: 0.7s;
+    border:2px solid black;
+    width: 20%;
   
+  
+  }
+  button.menuefloat:hover {
+    background-color: black;
+    color:rgb(255, 255, 255);
+  }
+  button.menuehomefloat {
+    background-color: black;
+    color:rgb(255, 255, 255);
+    padding: 15px 32px;
+    text-align: center;
+    display: inline-block;
+    font-size: 11px;
+    border-radius: 0px;
+    -webkit-transition-duration: 0.7s; /* Safari */
+    transition-duration: 0.7s;
+    border:2px solid black;
+    width: 20%;
+  
+  
+  }
+  button.menuehomefloat:hover {
+    background-color: black;
+    color:rgb(255, 255, 255);
+  }
+}
