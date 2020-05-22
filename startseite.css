@@ -29,7 +29,17 @@
   .fussballhintergrund {
     background-image: url(football.jpg);
   }
-  
+  .thymiohintergrund {
+    background-image: url(zh.png);
+  }
+  .bootstraphintergrund {
+    background-image: url(bootstrap.png);
+    background-repeat: no-repeat;
+  }
+  .javascripthintergrund {
+    background-image: url(javascript.jpg);
+    background-repeat: no-repeat;
+  }
   /*
    * Dummy devices (replace them with your own or something else entirely!)
    */
