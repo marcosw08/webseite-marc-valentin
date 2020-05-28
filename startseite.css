@@ -112,22 +112,22 @@
     }
     .thymiohintergrund {
       background-image: url(zh.png);
-      zoom: 160%;
+      zoom: 180%;
     }
     .bootstraphintergrund {
       background-image: url(bootstrap.png);
       background-repeat: no-repeat;
-      zoom: 46%;
+      zoom: 56%;
     }
     .javascripthintergrund {
       background-image: url(javascript.jpg);
       background-repeat: no-repeat;
-      zoom: 44%;
+      zoom: 54%;
     }
     .phphintergrund {
       background-image: url(php.png);
       background-repeat: no-repeat;
-      zoom: 62%;
+      zoom: 72%;
 
     }
   }
