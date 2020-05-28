@@ -43,6 +43,7 @@
   .phphintergrund {
     background-image: url(php.png);
     background-repeat: no-repeat;
+    zoom: 110%;
   }
   /*
    * Dummy devices (replace them with your own or something else entirely!)
