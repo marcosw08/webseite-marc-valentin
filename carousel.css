@@ -68,6 +68,9 @@ body {
   .htmlgrund {
     zoom: 100%;
   }
+  .javascriptgrund {
+     zoom: 100%;
+  }
   
   /* RESPONSIVE CSS
   -------------------------------------------------- */
@@ -92,7 +95,10 @@ body {
   }
    @media (max-width:800px) {
     .htmlgrund {
-      zoom:80%;
+      zoom:70%;
     }
+    $.javascriptgrund {
+      zoom: 40%;
+   }
    }
   
