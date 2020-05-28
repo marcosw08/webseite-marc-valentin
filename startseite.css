@@ -94,5 +94,40 @@
       flex: 1;
     }
   }
+
   
   .overflow-hidden { overflow: hidden; }
+  @media (max-width: 800px) {
+    .indexhintergrund {
+      background-image: url(indexminecraft.jpg);
+      zoom: 40%;
+    }
+    .programmhintergrund {
+      background-image: url(programmer.jpg);
+      zoom: 40%;
+    }
+    .fussballhintergrund {
+      background-image: url(football.jpg);
+      zoom: 50%;
+    }
+    .thymiohintergrund {
+      background-image: url(zh.png);
+      zoom: 160%;
+    }
+    .bootstraphintergrund {
+      background-image: url(bootstrap.png);
+      background-repeat: no-repeat;
+      zoom: 46%;
+    }
+    .javascripthintergrund {
+      background-image: url(javascript.jpg);
+      background-repeat: no-repeat;
+      zoom: 44%;
+    }
+    .phphintergrund {
+      background-image: url(php.png);
+      background-repeat: no-repeat;
+      zoom: 62%;
+
+    }
+  }
