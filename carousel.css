@@ -65,7 +65,9 @@ body {
     line-height: 1;
     letter-spacing: -.05rem;
   }
-  
+  .htmlgrund {
+    zoom: 100%;
+  }
   
   /* RESPONSIVE CSS
   -------------------------------------------------- */
@@ -88,4 +90,9 @@ body {
       margin-top: 7rem;
     }
   }
+   @media (max-width:800px) {
+    .htmlgrund {
+      zoom:80%;
+    }
+   }
   
