@@ -95,7 +95,7 @@ body {
   }
    @media (max-width:800px) {
     .htmlgrund {
-      zoom:70%;
+      zoom:65%;
     }
     .javascriptgrund {
       zoom: 40%;
