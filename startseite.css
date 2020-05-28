@@ -117,12 +117,12 @@
     .bootstraphintergrund {
       background-image: url(bootstrap.png);
       background-repeat: no-repeat;
-      zoom: 56%;
+      zoom: 36%;
     }
     .javascripthintergrund {
       background-image: url(javascript.jpg);
       background-repeat: no-repeat;
-      zoom: 54%;
+      zoom: 34%;
     }
     .phphintergrund {
       background-image: url(php.png);
