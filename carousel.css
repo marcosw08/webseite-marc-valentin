@@ -71,6 +71,9 @@ body {
   .javascriptgrund {
      zoom: 100%;
   }
+  .phpgrund {
+    zoom: 100%;
+  }
   
   /* RESPONSIVE CSS
   -------------------------------------------------- */
@@ -99,6 +102,10 @@ body {
     }
     .javascriptgrund {
       zoom: 40%;
-   }
-   }
+    }
+    .phpgrund {
+      zoom: 60%;
+    }
+  }
+  
   
