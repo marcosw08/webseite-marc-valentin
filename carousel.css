@@ -74,6 +74,12 @@ body {
   .phpgrund {
     zoom: 100%;
   }
+  .xmlgrund {
+   zoom: 100% 
+  }
+  .rubygrund {
+   zoom:100%;
+  }
   
   /* RESPONSIVE CSS
   -------------------------------------------------- */
@@ -104,8 +110,14 @@ body {
       zoom: 40%;
     }
     .phpgrund {
-      zoom: 40%;
+      zoom: 55%;
     }
+    .xmlgrund {
+      zoom: 80% 
+     }
+     .rubygrund {
+      zoom:69%;
+     }
   }
   
   
