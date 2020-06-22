@@ -79,7 +79,7 @@
 <span class="keyword">onevent</span> button.forward     <span class="erklärung"># Befehlt wenn der vordere Knopf gedrückt wird, Beide Motoren geradeaus Gas geben.</span>
 motor.left.target =<span class="befehl">500</span>
 motor.right.target =<span class="befehl">500</span>
-<span class="keyword">onevent</span> button.backward 	<span class="erklärung"># Befehlt wenn der hintere Knopf gedrückt wird, Beide Motoren Rückwärts Gas geben.</span>
+<span class="keyword">onevent</span> button.backward    <span class="erklärung"># Befehlt wenn der hintere Knopf gedrückt wird, Beide Motoren Rückwärts Gas geben.</span>
 motor.left.target =<span class="befehl">-500</span>
 motor.right.target =-<span class="befehl">-500</span>
 <span class="keyword">onevent</span> button.center      <span class="erklärung"># Befehlt wenn der mittlere Knopf gedrückt wird, Beide Motoren still stehen.</span>
@@ -88,7 +88,7 @@ motor.right.target =<span class="befehl">0</span>
 <span class="keyword">onevent</span> button.left        <span class="erklärung"># Befehlt wenn der linke Knopf gedrückt wird, Beide Motoren unterschiedlich Gas geben, und schräg fahren.</span>
 motor.left.target =<span class="befehl">350</span>
 motor.right.target =<span class="befehl">500</span>
-<span class="keyword">onevent</span> button.right   <span class="erklärung"># Befehlt wenn der rechte Knopf gedrückt wird, Beide Motoren unterschiedlich Gas geben, und schräg fahren.</span>
+<span class="keyword">onevent</span> button.right       <span class="erklärung"># Befehlt wenn der rechte Knopf gedrückt wird, Beide Motoren unterschiedlich Gas geben, und schräg fahren.</span>
 motor.left.target =<span class="befehl">500</span>
 motor.right.target =<span class="befehl">350</span>
            </pre>
@@ -102,12 +102,11 @@ motor.right.target =<span class="befehl">350</span>
         <p><br><br>Und so sieht der Programmcode aus. Du kannst ihn kopieren.</p>
         <div class="sourcecode">
                 <pre>
-<span class="keyword">onevent</span> button.forward               <span class="erklärung"># Wenn der vordere Knopf gedrückt wird, dann schalte die Motoren auf 300.</span>
+<span class="keyword">onevent</span> button.forward                                          <span class="erklärung"># Wenn der vordere Knopf gedrückt wird, dann schalte die Motoren auf 300.</span>
 motor.left.target =<span class="befehl">300</span>
 motor.right.target =<span class="befehl">300</span>
  
 <span class="keyword">onevent</span> prox
- 
 <span class="keyword">if</span> prox.ground.delta[0] &lt;100 or prox.ground.delta[1] &lt;100 <span class="keyword">then</span>  <span class="erklärung"># Wenn die unteren Sensoren mehr als 100 wahrnehmen, dann schalte die Motoren auf 0.</span>
 motor.left.target =<span class="befehl">0</span>                                                 
 motor.right.target =<span class="befehl">0</span>
@@ -124,36 +123,33 @@ motor.right.target =<span class="befehl">0</span>
         <p><br><br>Und so sieht der Programmcode aus. Du kannst ihn kopieren.</p>
         <div class="sourcecode">
                 <pre>
-<span class="keyword">var</span> Switch =<span class="befehl">1</span>		<span class="erklärung">#Erstellt eine Variable "Switch", um den Roboter mit einem Knopf zu steuern.</span>
+<span class="keyword">var</span> Switch =<span class="befehl">1</span>		                                          <span class="erklärung">#Erstellt eine Variable "Switch", um den Roboter mit einem Knopf zu steuern.</span>
 
 <span class="keyword">onevent</span> buttons												
 <span class="keyword">if</span> button.center ==<span class="befehl">1</span> and Switch ==<span class="befehl">1</span> <span class="keyword">then</span>
         <span class="keyword">while</span> button.center ==<span class="befehl">1</span> <span class="keyword">do</span>
                 Switch =<span class="befehl">0</span>
         <span class="keyword">end</span>
-<span class="keyword">while</span> button.center ==<span class="befehl">0</span> <span class="keyword">do</span>        <span class="erklärung">#Schaut, wann der Roboter auf ein Hindernis trifft, und kehrt um.</span>
-                motor.left.target =<span class="befehl">1000</span>
-                motor.right.target =<span class="befehl">1000</span>
-                <span class="keyword">if</span> prox.horizontal [1] &gt;<span class="befehl">3000</span> <span class="keyword">then</span>
-                        <span class="keyword">while</span> prox.horizontal [<span class="befehl">6</span>] &lt;<span class="befehl">1000</span> <span class="keyword">do</span>
-                                motor.left.target =<span class="befehl">0</span>
-                                motor.right.target =<span class="befehl">-500</span>
-                         <span class="keyword">end</span>
-                <span class="keyword">end</span>	
-                        <span class="keyword">if</span> prox.horizontal [<span class="befehl">3</span>] ><span class="befehl">3000</span> <span class="keyword">then</span>
-                        <span class="keyword">while</span> prox.horizontal [<span class="befehl">5</span>] &lt;<span class="befehl">1000</span> <span class="keyword">do</span>
-                                motor.left.target =<span class="befehl">-500</span>
-                                motor.right.target =<span class="befehl">0</span>
-                        <span class="keyword">end</span>
+<span class="keyword">while</span> button.center ==<span class="befehl">0</span> <span class="keyword">do</span>                                        <span class="erklärung">#Schaut, wann der Roboter auf ein Hindernis trifft, und kehrt um.</span>
+        motor.left.target =<span class="befehl">1000</span>
+        motor.right.target =<span class="befehl">1000</span>
+        <span class="keyword">if</span> prox.horizontal [1] &gt;<span class="befehl">3000</span> <span class="keyword">then</span>
+                <span class="keyword">while</span> prox.horizontal [<span class="befehl">6</span>] &lt;<span class="befehl">1000</span> <span class="keyword">do</span>
+                        motor.left.target =<span class="befehl">0</span>
+                        motor.right.target =<span class="befehl">-500</span>
                 <span class="keyword">end</span>
-
-           <span class="keyword">end</span>
-
-        
-        <span class="keyword">while</span>button.center ==<span class="befehl">1</span> <span class="keyword">do</span>
-                Switch =<span class="befehl">0</span>
+        <span class="keyword">end</span>	
+        <span class="keyword">if</span> prox.horizontal [<span class="befehl">3</span>] ><span class="befehl">3000</span> <span class="keyword">then</span>
+                <span class="keyword">while</span> prox.horizontal [<span class="befehl">5</span>] &lt;<span class="befehl">1000</span> <span class="keyword">do</span>
+                        motor.left.target =<span class="befehl">-500</span>
+                        motor.right.target =<span class="befehl">0</span>
+                <span class="keyword">end</span>
         <span class="keyword">end</span>
-        <span class="keyword">elseif</span> button.center ==1 and Switch ==0 <span class="keyword">then</span>		<span class="erklärung">#Schaltet den Roboter wieder aus.</span>
+<span class="keyword">end</span>       
+<span class="keyword">while </span>button.center ==<span class="befehl">1</span> <span class="keyword">do</span>
+        Switch =<span class="befehl">0</span>
+<span class="keyword">end</span>
+        <span class="keyword">if</span> button.center ==1 and Switch ==0 <span class="keyword">then</span>		<span class="erklärung">#Schaltet den Roboter wieder aus.</span>
                 motor.left.target =<span class="befehl">0</span>
                 motor.right.target =<span class="befehl">0</span>
         <span class="keyword">while</span> button.center ==<span class="befehl">1</span> <span class="keyword">do</span>
@@ -172,9 +168,9 @@ motor.right.target =<span class="befehl">0</span>
         <p><br><br>Und so sieht der Programmcode aus. Du kannst ihn kopieren.</p>
         <div class="sourcecode">
                 <pre>
-<span class="keyword">var</span> a =<span class="befehl">0</span>																	<span class="erklärung">#Erstellt eine Variable "a"</span>
+<span class="keyword">var</span> a =<span class="befehl">0</span>										                        <span class="erklärung">#Erstellt eine Variable "a"</span>
 
-<span class="keyword">onevent</span> buttons														<span class="erklärung">#Schaltet die Motoren des Roboters ein, nachdem der Knopf</span>
+<span class="keyword">onevent</span> buttons												        <span class="erklärung">#Schaltet die Motoren des Roboters ein, nachdem der Knopf</span>
 <span class="keyword">if</span> button.forward ==<span class="befehl">1</span> <span class="keyword">then</span>											<span class="erklärung">#vorwärts gedrückt wurde, und ändert das Tempo der</span>
         <span class="keyword">while</span> button.center ==<span class="befehl">1</span> <span class="keyword">do</span>										<span class="erklärung">#einzelnen Motoren abhängig vom Untergrund.</span>
                 a=<span class="befehl">1</span>
@@ -206,7 +202,7 @@ motor.right.target =<span class="befehl">0</span>
 <span class="keyword">var</span> a =<span class="befehl">0</span>								<span class="erklärung">#Erstellt eine Variable "a"</span>
 <span class="keyword">var</span> Colour =<span class="befehl">0</span>								<span class="erklärung">#Erstellt eine Variable "Colour"</span>
 <span class="keyword">onevent</span> buttons
-<span class="keyword">if</span> button.center ==<span class="befehl">1</span> <span class="keyword">and</span> Colour ==0 <span class="keyword">then</span>				<span class="erklärung">#Setzt jedes zweite Mal die LED-Farbe auf rot</span>
+<span class="keyword">if</span> button.center ==<span class="befehl">1</span> <span class="keyword">and</span> Colour ==0 <span class="keyword">then</span>			        <span class="erklärung">#Setzt jedes zweite Mal die LED-Farbe auf rot</span>
         <span class="keyword">call</span> leds.top (<span class="befehl">32</span>, <span class="befehl">0</span>, <span class="befehl">0</span>)
 	Colour =<span class="befehl">1</span>
 	<span class="keyword">if</span> button.center ==<span class="befehl">1</span> <span class="keyword">then</span>
@@ -214,7 +210,7 @@ motor.right.target =<span class="befehl">0</span>
 			a=a+<span class="befehl">1</span>
                 <span class="keyword">end</span>
         <span class="keyword">end</span>
-<span class="keyword">elseif</span> button.center ==<span class="befehl">1</span> and Colour ==<span class="befehl">1</span> then		        	<span class="erklärung">#Setzt jedes zweite Mal die LED-Farbe auf grün</span>
+<span class="keyword">elseif</span> button.center ==<span class="befehl">1</span> and Colour ==<span class="befehl">1</span> then		                <span class="erklärung">#Setzt jedes zweite Mal die LED-Farbe auf grün</span>
         <span class="keyword">call</span> leds.top (<span class="befehl">0</span>, <span class="befehl">32</span>, <span class="befehl">0</span>)
 	Colour =<span class="befehl">0</span>
 	<span class="keyword">if</span> button.center ==<span class="befehl">1</span> <span class="keyword">then</span>
@@ -236,7 +232,7 @@ motor.right.target =<span class="befehl">0</span>
                 <pre>
 <span class="keyword">var</span> Kreisgrösse =<span class="befehl">8</span>										        <span class="erklärung">#Erstellt eine Variable 'Kreisgrösse'</span>
 <span class="keyword">var</span> Speed =<span class="befehl">1</span>												<span class="erklärung">#Erstellt eine Variable 'Speed'</span>
-<span class="keyword">var</span> Beschäftigung												<span class="erklärung">#Erstellt eine Variable, die den Roboter beschäftigt</span>
+<span class="keyword">var</span> Beschäftigung											<span class="erklärung">#Erstellt eine Variable, die den Roboter beschäftigt</span>
 <span class="keyword">call</span> leds.temperature(<span class="befehl">0</span>, <span class="befehl">0</span>)
 <span class="keyword">call</span> leds.rc(<span class="befehl">0</span>)
 
@@ -247,7 +243,7 @@ motor.right.target =<span class="befehl">0</span>
         <span class="keyword">end</span>
 <span class="keyword">end</span>
 
-<span class="keyword">onevent</span> buttons													<span class="erklärung">#Prüft, welcher Knopf gedrückt wird</span>
+<span class="keyword">onevent</span> buttons												<span class="erklärung">#Prüft, welcher Knopf gedrückt wird</span>
 <span class="keyword">if</span> button.left ==<span class="befehl">1</span> and Kreisgrösse != <span class="befehl">9</span> <span class="keyword">then</span>
         Kreisgrösse=Kreisgrösse+<span class="befehl">1</span>
 <span class="keyword">end</span>
@@ -288,14 +284,14 @@ motor.right.target =<span class="befehl">0</span>
 <span class="keyword">end</span>
 
 
-<span class="keyword">if</span> button.left ==<span class="befehl">1</span> or button.right ==<span class="befehl">1</span> <span class="keyword">then</span>				  	<span class="erklärung">#Wartet, bis der Knopf losgelassen wurde.</span>
+<span class="keyword">if</span> button.left ==<span class="befehl">1</span> or button.right ==<span class="befehl">1</span> <span class="keyword">then</span>				  	                        <span class="erklärung">#Wartet, bis der Knopf losgelassen wurde.</span>
         <span class="keyword">while</span> button.left ==<span class="befehl">1</span> or button.right ==<span class="befehl">1</span> <span class="keyword">do</span>
                 Beschäftigung=Beschäftigung+<span class="befehl">1</span>
         <span class="keyword">end</span>
 <span class="keyword">end</span>
 
 
-<span class="keyword">if</span> button.forward ==<span class="befehl">1</span> and Speed !=<span class="befehl">9</span> <span class="keyword">then</span>						<span class="erklärung">#Prüft welcher Knopf gedrückt wird</span>
+<span class="keyword">if</span> button.forward ==<span class="befehl">1</span> and Speed !=<span class="befehl">9</span> <span class="keyword">then</span>						                <span class="erklärung">#Prüft welcher Knopf gedrückt wird</span>
         Speed=Speed+<span class="befehl">1</span>
 <span class="keyword">end</span>
 <span class="keyword">if</span> button.forward ==<span class="befehl">1</span> and Speed ==<span class="befehl">9</span> <span class="keyword">then</span>
@@ -309,10 +305,10 @@ motor.right.target =<span class="befehl">0</span>
 <span class="keyword">end</span>
 
 
-<span class="keyword">call</span> leds.buttons(Speed, Speed, Speed, Speed)					<span class="erklärung">#Passt die Helligkeit der Lichter an</span>
+<span class="keyword">call</span> leds.buttons(Speed, Speed, Speed, Speed)					                        <span class="erklärung">#Passt die Helligkeit der Lichter an</span>
 
 
-<span class="keyword">if</span> button.forward ==<span class="befehl">1</span> or button.backward ==<span class="befehl">1</span> <span class="keyword">then</span>				<span class="erklärung">#Wartet, bis der Knopf losgelassen wurde.</span>
+<span class="keyword">if</span> button.forward ==<span class="befehl">1</span> or button.backward ==<span class="befehl">1</span> <span class="keyword">then</span>				                        <span class="erklärung">#Wartet, bis der Knopf losgelassen wurde.</span>
         <span class="keyword">while</span> button.forward ==1 or button.backward ==1 <span class="keyword">do</span>
                 Beschäftigung=Beschäftigung+<span class="befehl">1</span>
         <span class="keyword">end</span>
@@ -336,10 +332,6 @@ motor.right.target =<span class="befehl">0</span>
                 </pre>
         </div>
         <h2<br><br><br><br>
-                <h2>Die Verfolgungsjagd</h2>
-                <p>Der Thymio fährt umher, bis er ein Ziel erkannt hat. Dann verfolgt er das Ziel.</p>
-                <p><iframe src="https://www.youtube.com/embed/eRQSUPqgouA" frameborder="0" allow="accelerometer;
-         autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 <h1><br><br><br>Abschnitt 2</h1>
                 <h2>So programmiert man Aseba:<br><br></h2>
 
