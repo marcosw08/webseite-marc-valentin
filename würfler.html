@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <title>Auswahl</title>
+</head>
+
+<body>
+    <script lang="javascript">
+        function getRandomInt(max) {
+            return 1 + Math.floor(Math.random() * Math.floor(max));
+        }
+        var anzahl = 0;
+        function choose() {
+            // var nr = (anzahl == 0) ? /* erster */ 3 : /* folgende */ getRandomInt(4);
+            var nr = getRandomInt(4);
+            anzahl++;
+            console.log("anzahl=" + anzahl + ", nr=" + nr);
+            $("tr").css("background-color", "")
+            $("tr:nth-child(" + (nr + 1) + ")").css("background-color", "darkgreen")
+        }
+    </script>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <ul class="navbar-nav">
+            <li class="nav-item active">
+                <a class="nav-link" href="index.html">phoswald.ch</a>
+            </li>
+        </ul>
+    </nav>
+    <div class="container">
+        <h2 class="my-4"><br><br>Zufallsgenerator für Brawl Stars!<br><br></h2>
+        <!--<form action="tasks" method="post">-->
+        <p>
+            <button type="button" class="btn btn-primary btn-lg btn-block" onclick="javascript:choose()">Der auserwählte ist...</button>
+        </p>
+        <table class="table table-hover mt-4">
+            <tr>
+                <th>Kandidaten:</th>
+                <th></th>
+            </tr>
+            <tr>
+                <td>Name 1</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Name 2</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Name 3</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Name 4</td>
+                <td></td>
+            </tr>
+            <!-- <tr>
+            <td><input type="text" class="form-control" name="title" value="New name..."></td>
+            <td><input type="submit" class="btn btn-primary btn-sm btn-block" value="Add"></td>
+          </tr>  -->
+        </table>
+        <p> <br><br><br><br><br><br>
+            <a href="index.html"><button type="button" class="btn btn-secondary btn-lg btn-block">Zurück zur Webseite</button></a>
+        </p>
+        <!--</form>-->
+    </div>
+</body>
+
+</html>
